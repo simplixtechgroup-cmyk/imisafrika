@@ -546,3 +546,14 @@ img, video { max-width: 100%; height: auto; display: block; }
   pointer-events: none;
   z-index: 1;
 }
+/* TRAME HEXAGONALE DANS LE FOOTER */
+.footer-hex-trame {
+  position: absolute;
+  right: -100px;
+  bottom: -60px;
+  width: 520px;
+  height: 520px;
+  opacity: 0.10; /* Respecte la règle de 8 à 16 % */
+  pointer-events: none;
+  z-index: 0;
+}
