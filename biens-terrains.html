@@ -4,72 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   
-  <!-- SEO & ENTITY GRAPH -->
+  <!-- =========================================================================
+       1. SEO D'AUTORITÉ & ENTITY GRAPH TRANSACTIONNEL
+       ========================================================================= -->
   <title>Biens & Terrains Titrés au Bénin | Portefeuille IMIS AFRIKA</title>
-  <meta name="description" content="Catalogue de parcelles titrées, domaines agricoles et résidences standing à Abomey-Calavi, Cotonou, Ouidah et Littoral. Audit juridique ANDF certifié.">
-  <meta name="robots" content="index, follow">
+  <meta name="description" content="Catalogue officiel de parcelles titrées, domaines agricoles et résidences standing à Abomey-Calavi (Zopah), Cotonou et Route des Pêches. Audit ANDF certifié.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="author" content="IMIS AFRIKA S.A.R.L.">
+  <link rel="canonical" href="https://imisafrika.bj/biens-terrains.html">
+
+  <!-- GÉOLOCALISATION SÉMANTIQUE -->
   <meta name="geo.region" content="BJ-AQ">
-  <meta name="geo.placename" content="Abomey-Calavi, Cotonou">
+  <meta name="geo.placename" content="Abomey-Calavi, Quartier Zopah">
+  <meta name="geo.position" content="6.4485;2.3557">
+  <meta name="ICBM" content="6.4485, 2.3557">
+
+  <!-- OPEN GRAPH / PARTAGE WHATSAPP -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="IMIS AFRIKA S.A.R.L.">
+  <meta property="og:title" content="Terrains Titrés & Opportunités Immobilières Sécurisées au Bénin">
+  <meta property="og:description" content="Consultez nos parcelles auditées et titrées avec conformité notariée et cadastrale garantie.">
+  <meta property="og:url" content="https://imisafrika.bj/biens-terrains.html">
+  <meta property="og:image" content="https://imisafrika.bj/assets/img/og-terrains.webp">
 
   <!-- RESSOURCES CRITIQUES -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 
-  <!-- TAILWIND CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            terracotta: {
-              DEFAULT: '#9E472A',
-              hover: '#B85D36',
-              light: '#C77551',
-              dark: '#7A321B'
-            },
-            sable: {
-              DEFAULT: '#E5D7D0',
-              nude: '#F3ECE7',
-              light: '#FAF7F5'
-            },
-            onyx: {
-              DEFAULT: '#111111',
-              card: '#181818',
-              muted: '#222222'
-            }
-          },
-          fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            display: ['"Syne"', 'sans-serif']
-          }
-        }
-      }
-    }
-  </script>
+  <!-- FEUILLE DE STYLE EXTERNE PURE (DÉCOUPLÉE) -->
+  <link rel="stylesheet" href="css/style.css">
 
-  <style>
-    body {
-      background-color: #111111;
-      color: #FAF7F5;
-      font-family: 'Plus Jakarta Sans', sans-serif;
-    }
-    .filter-btn.active {
-      background-color: #9E472A;
-      color: #FFFFFF;
-      border-color: #9E472A;
-    }
-  </style>
-
-  <!-- SCHEMA.ORG COLLECTIONPAGE / REAL ESTATE LISTINGS -->
+  <!-- SCHEMA.ORG COLLECTIONPAGE / ITEMLIST -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     "name": "Portefeuille d'Actifs Immobiliers et Fonciers - IMIS AFRIKA",
     "url": "https://imisafrika.bj/biens-terrains.html",
-    "description": "Sélection exclusive de terrains avec titre foncier, domaines et villas sécurisés au Bénin.",
+    "description": "Sélection d'actifs immobiliers et terrains sécurisés avec titre foncier au Bénin.",
     "publisher": {
       "@type": "RealEstateAgency",
       "name": "IMIS AFRIKA S.A.R.L.",
@@ -86,527 +59,433 @@
   </script>
 </head>
 
-<body class="selection:bg-terracotta selection:text-white">
+<body>
 
-  <!-- ========================================================================= -->
-  <!-- 1. BANDEAU DE CONFIANCE LÉGALE                                            -->
-  <!-- ========================================================================= -->
-  <aside class="bg-onyx-card border-b border-sable/10 py-2 px-4 text-xs text-sable/80 hidden sm:block">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <div class="flex items-center gap-3">
-        <span class="inline-flex items-center gap-1.5 text-emerald-400 font-semibold">
-          <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-          Cellule des Transactions Ouverte
-        </span>
-        <span class="text-sable/30">•</span>
-        <span>RCCM : RB/ABC/26 B 12115</span>
-        <span class="text-sable/30">•</span>
-        <span>Siège : Zopah, Abomey-Calavi</span>
+  <!-- =========================================================================
+       BANDEAU SUPÉRIEUR DE CONFIANCE
+       ========================================================================= -->
+  <aside class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span class="live-dot"></span>
+        <span class="text-highlight">Cellule des Transactions Active</span>
+        <span class="separator">•</span>
+        <span>RCCM Cotonou : RB/ABC/26 B 12115</span>
+        <span class="separator">•</span>
+        <span>Siège : Ilot 11, Zopah, Abomey-Calavi</span>
       </div>
-      <div class="flex items-center gap-4 font-medium">
-        <a href="tel:+2290153932286" class="hover:text-terracotta-light transition-colors">+229 01 53 93 22 86</a>
-        <span class="text-sable/30">|</span>
-        <a href="tel:+2290196177515" class="hover:text-terracotta-light transition-colors">+229 01 96 17 75 15</a>
+      <div class="top-bar-right">
+        <a href="tel:+2290153932286">+229 01 53 93 22 86</a>
+        <span class="separator">|</span>
+        <a href="tel:+2290196177515">+229 01 96 17 75 15</a>
       </div>
     </div>
   </aside>
 
-  <!-- ========================================================================= -->
-  <!-- 2. NAVIGATION PRINCIPALE                                                  -->
-  <!-- ========================================================================= -->
-  <header class="sticky top-0 z-50 w-full bg-onyx/90 backdrop-blur-md border-b border-sable/10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+  <!-- =========================================================================
+       NAVIGATION PRINCIPALE STICKY
+       ========================================================================= -->
+  <header class="navbar" id="main-navbar">
+    <div class="container navbar-container">
       
-      <a href="index.html" class="flex items-center gap-3 group">
-        <div class="relative w-10 h-10 flex items-center justify-center">
-          <svg viewBox="0 0 100 100" class="w-full h-full" fill="none">
+      <a href="index.html" class="brand-logo" aria-label="IMIS AFRIKA - Accueil">
+        <div class="logo-icon-wrap">
+          <svg viewBox="0 0 100 100" class="logo-svg" fill="none">
             <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" stroke="#9E472A" stroke-width="8" fill="rgba(158, 71, 42, 0.15)" />
             <polygon points="50,20 78,36 78,64 50,80 22,64 22,36" stroke="#E5D7D0" stroke-width="4" fill="none" opacity="0.6"/>
           </svg>
         </div>
-        <div class="flex flex-col">
-          <span class="font-display font-extrabold text-xl tracking-wider text-white">IMIS</span>
-          <span class="text-[9px] tracking-[0.35em] text-sable font-bold uppercase -mt-1">AFRIKA</span>
+        <div class="logo-text">
+          <span class="logo-title">IMIS</span>
+          <span class="logo-sub">AFRIKA</span>
         </div>
       </a>
 
-      <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold">
-        <a href="index.html" class="text-sable/80 hover:text-white transition-colors">Accueil</a>
-        <a href="biens-terrains.html" class="text-white border-b-2 border-terracotta pb-1">Nos Biens & Terrains</a>
-        <a href="services.html" class="text-sable/80 hover:text-white transition-colors">Services & Expertises</a>
-        <a href="conseils.html" class="text-sable/80 hover:text-white transition-colors flex items-center gap-1.5">
-          <span>Conseils & Analyses</span>
-          <span class="bg-terracotta/30 text-terracotta-light text-[10px] px-1.5 py-0.5 rounded font-bold">BLOG</span>
-        </a>
-        <a href="contact.html" class="text-sable/80 hover:text-white transition-colors">Contact</a>
+      <nav aria-label="Navigation principale">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Accueil</a></li>
+          <li><a href="biens-terrains.html" class="nav-link active">Nos Biens & Terrains</a></li>
+          <li><a href="services.html" class="nav-link">Services & Expertises</a></li>
+          <li>
+            <a href="conseils.html" class="nav-link nav-blog-pill">
+              <span>Conseils & Analyses</span>
+              <span class="micro-badge">BLOG</span>
+            </a>
+          </li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
       </nav>
 
-      <div class="flex items-center gap-3">
-        <a href="https://wa.me/2290153932286?text=Bonjour%20IMIS%20AFRIKA,%20je%20souhaite%20consulter%20vos%20opportunit%C3%A9s%20fonci%C3%A8res." 
+      <div class="nav-actions">
+        <a href="https://wa.me/2290153932286?text=Bonjour%20la%20Direction%20IMIS%20AFRIKA,%20je%20souhaite%20consulter%20vos%20opportunit%C3%A9s%20fonci%C3%A8res." 
            target="_blank" 
            rel="noopener noreferrer" 
-           class="inline-flex items-center gap-2 bg-terracotta hover:bg-terracotta-hover text-white text-xs sm:text-sm font-bold px-4 py-2.5 rounded shadow-lg shadow-terracotta/20 transition-all active:scale-95">
-          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+           class="btn-primary">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.539 1.77.818 2.791.819h.005c3.18 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.765-5.768-5.765zm0-2.172c4.418 0 8 3.582 8 8 0 4.417-3.582 8-8 8a7.96 7.96 0 0 1-4.048-1.096L2 20.245l1.373-5.836A7.95 7.95 0 0 1 4.03 12c0-4.418 3.582-8 8-8z"/>
           </svg>
           <span>Desk WhatsApp</span>
         </a>
+
+        <button class="burger-btn" aria-label="Ouvrir le menu mobile">
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+        </button>
       </div>
+
     </div>
   </header>
 
-  <!-- ========================================================================= -->
-  <!-- 3. EN-TÊTE DE PAGE : PORTAL IMMOBILIER DE PRESTIGE                        -->
-  <!-- ========================================================================= -->
-  <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-sable/10">
-    <div class="max-w-3xl">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-terracotta/15 border border-terracotta/30 text-terracotta-light text-xs font-bold uppercase tracking-wider mb-4">
-        <span class="w-1.5 h-1.5 rounded-full bg-terracotta"></span>
-        Portefeuille Foncier & Actifs Vérifiés
+  <!-- DRAWER MOBILE -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <a href="index.html" class="nav-link">Accueil</a>
+    <a href="biens-terrains.html" class="nav-link active">Nos Biens & Terrains</a>
+    <a href="services.html" class="nav-link">Services & Expertises</a>
+    <a href="conseils.html" class="nav-link">Conseils & Analyses</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="https://wa.me/2290153932286" target="_blank" class="btn-primary mt-4">
+      <span>Contacter le Desk WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- =========================================================================
+       EN-TÊTE DE PAGE : POSITIONNEMENT DU PORTEFEUILLE
+       ========================================================================= -->
+  <section class="page-header border-b">
+    <div class="container">
+      <div class="page-header-content">
+        <span class="sub-badge">Portefeuille d'Actifs Vérifiés</span>
+        <h1 class="page-title">Parcelles Titrées & Actifs d'Investissement au Bénin</h1>
+        <p class="page-desc">
+          Chaque opportunité ci-dessous a fait l’objet d'un audit cadastral ANDF et d'un contrôle notarié. Nous certifions l'absence totale de litige coutumier, d'hypothèque ou de vice caché.
+        </p>
       </div>
-      <h1 class="font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight leading-tight mb-4">
-        Parcelles Titrées & Actifs d'Investissement au Bénin
-      </h1>
-      <p class="text-sable/80 text-sm sm:text-base leading-relaxed">
-        Chaque bien ci-dessous a fait l’objet d'un pré-audit cadastral et juridique rigoureux. Nous certifions l'absence totale de litige coutumier ou d'hypothèque avant toute mise en relation.
-      </p>
     </div>
   </section>
 
-  <!-- ========================================================================= -->
-  <!-- 4. BARRE DE FILTRAGE INSTANTANÉ (VANILLA JS ULTRA-RAPIDE)                 -->
-  <!-- ========================================================================= -->
-  <section class="py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+  <!-- =========================================================================
+       SYSTÈME DE FILTRAGE INSTANTANÉ (INTERACTIF AVEC JS/MAIN.JS)
+       ========================================================================= -->
+  <section class="filter-section">
+    <div class="container">
+      
+      <!-- Onglets catégories -->
+      <div class="filter-tabs">
+        <button class="tab-btn active" data-filter="all">
+          Tous les Actifs (<span id="properties-count">6</span>)
+        </button>
+        <button class="tab-btn" data-filter="terrain">
+          Parcelles Titrées
+        </button>
+        <button class="tab-btn" data-filter="domaine">
+          Domaines Agricoles & Littoral
+        </button>
+        <button class="tab-btn" data-filter="villa">
+          Villas & Bâtis Standing
+        </button>
+      </div>
+
+      <!-- Sous-filtres localités -->
+      <div class="location-filters">
+        <span class="loc-label">Axes prioritaires :</span>
+        <span class="loc-tag">Abomey-Calavi (Zopah, Arconville)</span>
+        <span class="loc-sep">•</span>
+        <span class="loc-tag">Ouidah (Route des Pêches)</span>
+        <span class="loc-sep">•</span>
+        <span class="loc-tag">Cotonou (Cadjèhoun, Akpakpa)</span>
+        <span class="loc-sep">•</span>
+        <span class="loc-tag">Allada</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       GRILLE D'ACTIFS IMMOBILIERS DISPONIBLES
+       ========================================================================= -->
+  <section class="section-pb">
+    <div class="container">
+      <div class="properties-grid" id="properties-container">
+
+        <!-- BIEN 1 : PARCELLE ZOPAH -->
+        <article class="property-card" data-type="terrain" data-loc="calavi">
+          <div class="card-media">
+            <img src="assets/img/real-estate/parcelle-zopah.webp" alt="Parcelle titrée à Abomey-Calavi Zopah" loading="lazy">
+            <span class="card-badge">Titre Foncier Disponible</span>
+            <span class="card-location">Abomey-Calavi • Zopah</span>
+          </div>
+          <div class="card-body">
+            <span class="card-ref">Réf. IMIS-ZP01 • Résidentiel</span>
+            <h2 class="card-title">Parcelle Viabilisée 500 m² – Zopah</h2>
+            <p class="card-text">
+              Située à 300 mètres du tronçon principal. Zone résidentielle calme, raccordements SBEE et SONEB disponibles à proximité immédiate.
+            </p>
+            <div class="card-specs">
+              <div>Superficie : <strong>500 m²</strong></div>
+              <div>Garantie : <strong class="text-emerald">TF Individuel</strong></div>
+              <div>Topographie : <strong>Terrain Plat</strong></div>
+              <div>Disponibilité : <strong>Immédiate</strong></div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://wa.me/2290153932286?text=Bonjour%20IMIS%20AFRIKA,%20je%20souhaite%20recevoir%20le%20dossier%20complet%20de%20la%20Parcelle%20Zopah%20500m2%20(R%C3%A9f.%20IMIS-ZP01)." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-card">
+              <span>Dossier Cadastral & Visite</span>
+              <span>➔</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- BIEN 2 : DOMAINE ROUTE DES PÊCHES -->
+        <article class="property-card" data-type="domaine" data-loc="ouidah">
+          <div class="card-media">
+            <img src="assets/img/real-estate/route-des-peches.webp" alt="Domaine littoral Route des Pêches Ouidah" loading="lazy">
+            <span class="card-badge bg-terracotta">Investissement Stratégique</span>
+            <span class="card-location">Ouidah • Littoral</span>
+          </div>
+          <div class="card-body">
+            <span class="card-ref">Réf. IMIS-RP02 • Tourisme & Hôtellerie</span>
+            <h2 class="card-title">Domaine Balnéaire 1 200 m² – Route des Pêches</h2>
+            <p class="card-text">
+              Façade accessible sur le couloir balnéaire d'envergure nationale. Idéal pour complexe hôtelier, lodge ou résidence secondaire haut standing.
+            </p>
+            <div class="card-specs">
+              <div>Superficie : <strong>1 200 m²</strong></div>
+              <div>Garantie : <strong class="text-emerald">TF Global en cours</strong></div>
+              <div>Accès : <strong>Voie bitumée</strong></div>
+              <div>Plus-value : <strong class="text-emerald">Très Élevée</strong></div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://wa.me/2290153932286?text=Bonjour%20IMIS%20AFRIKA,%20je%20souhaite%20des%20d%C3%A9tails%20sur%20le%20Domaine%20Route%20des%20P%C3%AAches%20(R%C3%A9f.%20IMIS-RP02)." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-card">
+              <span>Dossier Cadastral & Visite</span>
+              <span>➔</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- BIEN 3 : VILLA COTONOU CADJÈHOUN -->
+        <article class="property-card" data-type="villa" data-loc="cotonou">
+          <div class="card-media">
+            <img src="assets/img/real-estate/villa-cotonou.webp" alt="Villa moderne Cadjèhoun Cotonou" loading="lazy">
+            <span class="card-badge">Titre Foncier Notarié</span>
+            <span class="card-location">Cotonou • Cadjèhoun</span>
+          </div>
+          <div class="card-body">
+            <span class="card-ref">Réf. IMIS-CD03 • Résidentiel Prestige</span>
+            <h2 class="card-title">Villa Contemporaine 5 Pièces – Cadjèhoun</h2>
+            <p class="card-text">
+              Architecture d'avant-garde, 4 suites avec dressings, piscine privée, groupe électrogène de secours et guérite de surveillance blindée.
+            </p>
+            <div class="card-specs">
+              <div>Chambres : <strong>4 Suites</strong></div>
+              <div>Garantie : <strong class="text-emerald">TF Notarié Net</strong></div>
+              <div>Sécurité : <strong>Vidéo & Guérite</strong></div>
+              <div>Statut : <strong>Disponible</strong></div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://wa.me/2290153932286?text=Bonjour%20IMIS%20AFRIKA,%20je%20souhaite%20planifier%20une%20visite%20priv%C3%A9e%20de%20la%20Villa%20Cadj%C3%A8houn%20(R%C3%A9f.%20IMIS-CD03)." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-card">
+              <span>Dossier & Visite Privée</span>
+              <span>➔</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- BIEN 4 : PARCELLE ARCONVILLE -->
+        <article class="property-card" data-type="terrain" data-loc="calavi">
+          <div class="card-media">
+            <img src="assets/img/real-estate/parcelle-arconville.webp" alt="Parcelle d'angle Arconville Abomey-Calavi" loading="lazy">
+            <span class="card-badge">Titre Foncier Disponible</span>
+            <span class="card-location">Abomey-Calavi • Arconville</span>
+          </div>
+          <div class="card-body">
+            <span class="card-ref">Réf. IMIS-ARC04 • Résidentiel & Rapport</span>
+            <h2 class="card-title">Parcelle d'Angle 620 m² – Arconville</h2>
+            <p class="card-text">
+              Emplacement d'angle de rue, excellente accessibilité pour projet de villa individuelle ou d'immeuble locatif R+2. Sol sec et ferme.
+            </p>
+            <div class="card-specs">
+              <div>Superficie : <strong>620 m²</strong></div>
+              <div>Garantie : <strong class="text-emerald">TF Individuel</strong></div>
+              <div>Configuration : <strong>Angle de Rue</strong></div>
+              <div>Bornage : <strong>Certifié</strong></div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://wa.me/2290153932286?text=Bonjour%20IMIS%20AFRIKA,%20je%20souhaite%20des%20d%C3%A9tails%20sur%20la%20Parcelle%20Arconville%20620m2%20(R%C3%A9f.%20IMIS-ARC04)." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-card">
+              <span>Dossier Cadastral & Visite</span>
+              <span>➔</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- BIEN 5 : DOMAINE AGRO ALLADA -->
+        <article class="property-card" data-type="domaine" data-loc="allada">
+          <div class="card-media">
+            <img src="assets/img/real-estate/domaine-allada.webp" alt="Domaine agricole Allada Bénin" loading="lazy">
+            <span class="card-badge">Titre Foncier Global</span>
+            <span class="card-location">Allada • Périphérie</span>
+          </div>
+          <div class="card-body">
+            <span class="card-ref">Réf. IMIS-AG05 • Agro-Business</span>
+            <h2 class="card-title">Domaine Agricole 5 Hectares – Allada</h2>
+            <p class="card-text">
+              Terre arable riche, nappe phréatique accessible à faible profondeur. Accès continu pour gros porteurs toute l'année. Titre foncier global vérifié.
+            </p>
+            <div class="card-specs">
+              <div>Superficie : <strong>5 Hectares</strong></div>
+              <div>Garantie : <strong class="text-emerald">TF Vérifié</strong></div>
+              <div>Ressource Eau : <strong>Excellente</strong></div>
+              <div>Accès : <strong>Piste Lourde</strong></div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://wa.me/2290153932286?text=Bonjour%20IMIS%20AFRIKA,%20je%20souhaite%20recevoir%20le%20dossier%20du%20Domaine%20Agricole%205Ha%20Allada%20(R%C3%A9f.%20IMIS-AG05)." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-card">
+              <span>Dossier Cadastral & Visite</span>
+              <span>➔</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- BIEN 6 : IMMEUBLE MIXTE AKPAKPA -->
+        <article class="property-card" data-type="villa" data-loc="cotonou">
+          <div class="card-media">
+            <img src="assets/img/real-estate/immeuble-akpakpa.webp" alt="Immeuble mixte bureaux et logements Akpakpa" loading="lazy">
+            <span class="card-badge bg-terracotta">Rendement Locatif</span>
+            <span class="card-location">Cotonou • Akpakpa</span>
+          </div>
+          <div class="card-body">
+            <span class="card-ref">Réf. IMIS-AK06 • Immeuble de Rapport</span>
+            <h2 class="card-title">Immeuble R+2 Mixte Bureaux & Logements</h2>
+            <p class="card-text">
+              Composé de 2 plateaux de bureaux au RDC et de 4 appartements standing aux étages. Taux d'occupation de 90 %, rendement locatif net immédiat.
+            </p>
+            <div class="card-specs">
+              <div>Typologie : <strong>R+2 Mixte</strong></div>
+              <div>Garantie : <strong class="text-emerald">TF Individuel</strong></div>
+              <div>Rendement : <strong class="text-emerald">9% Brut Est.</strong></div>
+              <div>État : <strong>Parfait état</strong></div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="https://wa.me/2290153932286?text=Bonjour%20IMIS%20AFRIKA,%20je%20souhaite%20consulter%20les%20chiffres%20de%20l'Immeuble%20R%2B2%20Akpakpa%20(R%C3%A9f.%20IMIS-AK06)." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-card">
+              <span>Dossier Financier & Visite</span>
+              <span>➔</span>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       LE GUICHET SUR-MESURE : MANDAT DE RECHERCHE FONCIÈRE
+       ========================================================================= -->
+  <section class="section-py bg-card-section border-t">
+    <div class="container">
+      <div class="custom-mandate-card">
+        <div class="mandate-text">
+          <span class="sub-badge">Service Sur Mesure</span>
+          <h2 class="mandate-title">Vous ne trouvez pas la parcelle correspondant à vos critères ?</h2>
+          <p class="mandate-desc">
+            Confiez votre cahier des charges à notre cellule terrain. Nous prospectons directement auprès des propriétaires vérifiés, réalisons le pré-audit cadastral ANDF et vous soumettons des opportunités exclusives sous 10 jours.
+          </p>
+        </div>
+        <div class="mandate-action">
+          <a href="https://wa.me/2290153932286?text=Bonjour%20la%20Direction%20IMIS%20AFRIKA,%20je%20souhaite%20vous%20confier%20un%20mandat%20de%20recherche%20foncier%20personnalis%C3%A9." 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn-primary">
+            <span>Déposer un Mandat de Recherche</span>
+            <span>➔</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       LE NOUVEAU FOOTER SIGNATURE ÉPURÉ (STYLE SIMPLIX WATERMARK CENTRÉ)
+       ========================================================================= -->
+  <footer class="signature-footer">
     
-    <!-- Filtres par catégorie -->
-    <div class="flex flex-wrap items-center gap-2 sm:gap-3 mb-6">
-      <span class="text-xs font-bold text-sable/50 uppercase tracking-wider mr-2 hidden sm:inline">Type :</span>
-      <button onclick="filterProperties('all')" class="filter-btn active px-4 py-2 rounded text-xs font-bold border border-sable/20 text-sable transition-all">
-        Tous les Actifs (<span id="count-all">6</span>)
-      </button>
-      <button onclick="filterProperties('terrain')" class="filter-btn px-4 py-2 rounded text-xs font-bold border border-sable/20 text-sable hover:border-terracotta transition-all">
-        Parcelles Titrées
-      </button>
-      <button onclick="filterProperties('domaine')" class="filter-btn px-4 py-2 rounded text-xs font-bold border border-sable/20 text-sable hover:border-terracotta transition-all">
-        Domaines Agricoles & Littoral
-      </button>
-      <button onclick="filterProperties('villa')" class="filter-btn px-4 py-2 rounded text-xs font-bold border border-sable/20 text-sable hover:border-terracotta transition-all">
-        Villas & Bâtis Standing
-      </button>
-    </div>
+    <div class="footer-watermark" aria-hidden="true">IMIS AFRIKA</div>
 
-    <!-- Filtres par localisation -->
-    <div class="flex flex-wrap items-center gap-2 sm:gap-3 text-xs text-sable/70 pt-4 border-t border-sable/10">
-      <span class="font-bold text-sable/50 uppercase tracking-wider mr-2">Localité :</span>
-      <button onclick="filterLocation('all')" class="loc-btn underline font-bold text-white hover:text-terracotta-light">Toutes</button>
-      <span>•</span>
-      <button onclick="filterLocation('calavi')" class="loc-btn hover:text-white transition-colors">Abomey-Calavi (Zopah)</button>
-      <span>•</span>
-      <button onclick="filterLocation('ouidah')" class="loc-btn hover:text-white transition-colors">Route des Pêches / Ouidah</button>
-      <span>•</span>
-      <button onclick="filterLocation('cotonou')" class="loc-btn hover:text-white transition-colors">Cotonou</button>
-      <span>•</span>
-      <button onclick="filterLocation('allada')" class="loc-btn hover:text-white transition-colors">Allada</button>
-    </div>
-
-  </section>
-
-  <!-- ========================================================================= -->
-  <!-- 5. GRILLE DES BIENS DISPONIBLES                                           -->
-  <!-- ========================================================================= -->
-  <section class="pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-    <div id="properties-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-      <!-- BIEN 1 : PARCELLE ZOPAH -->
-      <article class="property-card bg-onyx-card border border-sable/10 rounded-xl overflow-hidden hover:border-terracotta/40 transition-all flex flex-col justify-between"
-               data-type="terrain" data-loc="calavi">
-        <div>
-          <div class="relative h-60 bg-onyx-muted overflow-hidden">
-            <img src="assets/img/real-estate/parcelle-zopah.webp" alt="Parcelle titrée à Abomey-Calavi Zopah" class="w-full h-full object-cover">
-            <span class="absolute top-3 left-3 bg-emerald-500 text-white text-[10px] font-extrabold px-2.5 py-1 rounded uppercase tracking-wider">
-              Titre Foncier Disponible
-            </span>
-            <span class="absolute bottom-3 right-3 bg-onyx/85 backdrop-blur-md text-sable text-xs font-semibold px-2.5 py-1 rounded">
-              Abomey-Calavi • Zopah
-            </span>
-          </div>
-          <div class="p-6">
-            <div class="flex justify-between items-start mb-2">
-              <span class="text-xs text-sable/60 uppercase tracking-wider font-semibold">Réf. IMIS-ZP01</span>
-              <span class="text-xs font-bold text-terracotta-light">Résidentiel</span>
-            </div>
-            <h2 class="font-display font-bold text-xl text-white mb-2">Parcelle Viabilisée 500 m² – Zopah</h2>
-            <p class="text-sable/70 text-xs leading-relaxed mb-4">
-              Idéalement située à 300 mètres du pavé principal. Zone calme et hautement sécurisée. Raccordements SBEE et SONEB disponibles à proximité immédiate.
-            </p>
-            <div class="grid grid-cols-2 gap-2 text-xs py-3 border-y border-sable/10 text-sable/80">
-              <div>Superficie : <strong class="text-white">500 m²</strong></div>
-              <div>Garantie : <strong class="text-emerald-400">TF Individuel</strong></div>
-              <div>Topographie : <strong class="text-white">Terrain Plat</strong></div>
-              <div>Statut : <strong class="text-white">Immédiat</strong></div>
-            </div>
-          </div>
-        </div>
-        <div class="p-6 pt-0">
-          <a href="https://wa.me/2290153932286?text=Bonjour%20IMIS%20AFRIKA,%20je%20souhaite%20recevoir%20le%20dossier%20complet%20de%20la%20Parcelle%20Zopah%20500m2%20(R%C3%A9f.%20IMIS-ZP01)." 
-             target="_blank" 
-             class="w-full bg-terracotta hover:bg-terracotta-hover text-white py-2.5 px-4 rounded text-xs font-bold tracking-wide flex items-center justify-center gap-2 transition-all">
-            <span>Dossier Cadastral & Visite</span>
-            <span>➔</span>
-          </a>
-        </div>
-      </article>
-
-      <!-- BIEN 2 : DOMAINE ROUTE DES PÊCHES -->
-      <article class="property-card bg-onyx-card border border-sable/10 rounded-xl overflow-hidden hover:border-terracotta/40 transition-all flex flex-col justify-between"
-               data-type="domaine" data-loc="ouidah">
-        <div>
-          <div class="relative h-60 bg-onyx-muted overflow-hidden">
-            <img src="assets/img/real-estate/route-des-peches.webp" alt="Domaine balnéaire Route des Pêches Ouidah" class="w-full h-full object-cover">
-            <span class="absolute top-3 left-3 bg-terracotta text-white text-[10px] font-extrabold px-2.5 py-1 rounded uppercase tracking-wider">
-              Investissement Stratégique
-            </span>
-            <span class="absolute bottom-3 right-3 bg-onyx/85 backdrop-blur-md text-sable text-xs font-semibold px-2.5 py-1 rounded">
-              Ouidah • Littoral
-            </span>
-          </div>
-          <div class="p-6">
-            <div class="flex justify-between items-start mb-2">
-              <span class="text-xs text-sable/60 uppercase tracking-wider font-semibold">Réf. IMIS-RP02</span>
-              <span class="text-xs font-bold text-terracotta-light">Tourisme / Hôtellerie</span>
-            </div>
-            <h2 class="font-display font-bold text-xl text-white mb-2">Domaine Balnéaire 1 200 m² – Route des Pêches</h2>
-            <p class="text-sable/70 text-xs leading-relaxed mb-4">
-              Emplacement premium avec façade accessible sur le nouveau couloir touristique national. Idéal pour complexe hôtelier, lodge ou résidence de standing.
-            </p>
-            <div class="grid grid-cols-2 gap-2 text-xs py-3 border-y border-sable/10 text-sable/80">
-              <div>Superficie : <strong class="text-white">1 200 m²</strong></div>
-              <div>Garantie : <strong class="text-emerald-400">TF Global en cours</strong></div>
-              <div>Accès : <strong class="text-white">Voie bitumée</strong></div>
-              <div>Plus-value : <strong class="text-emerald-400">Très Élevée</strong></div>
-            </div>
-          </div>
-        </div>
-        <div class="p-6 pt-0">
-          <a href="https://wa.me/2290153932286?text=Bonjour%20IMIS%20AFRIKA,%20je%20souhaite%20des%20informations%20sur%20le%20Domaine%20Route%20des%20P%C3%AAches%20(R%C3%A9f.%20IMIS-RP02)." 
-             target="_blank" 
-             class="w-full bg-terracotta hover:bg-terracotta-hover text-white py-2.5 px-4 rounded text-xs font-bold tracking-wide flex items-center justify-center gap-2 transition-all">
-            <span>Dossier Cadastral & Visite</span>
-            <span>➔</span>
-          </a>
-        </div>
-      </article>
-
-      <!-- BIEN 3 : VILLA COTONOU CADJÈHOUN -->
-      <article class="property-card bg-onyx-card border border-sable/10 rounded-xl overflow-hidden hover:border-terracotta/40 transition-all flex flex-col justify-between"
-               data-type="villa" data-loc="cotonou">
-        <div>
-          <div class="relative h-60 bg-onyx-muted overflow-hidden">
-            <img src="assets/img/real-estate/villa-cotonou.webp" alt="Villa d'architecte Cadjèhoun Cotonou" class="w-full h-full object-cover">
-            <span class="absolute top-3 left-3 bg-emerald-500 text-white text-[10px] font-extrabold px-2.5 py-1 rounded uppercase tracking-wider">
-              Titre Foncier Notarié
-            </span>
-            <span class="absolute bottom-3 right-3 bg-onyx/85 backdrop-blur-md text-sable text-xs font-semibold px-2.5 py-1 rounded">
-              Cotonou • Cadjèhoun
-            </span>
-          </div>
-          <div class="p-6">
-            <div class="flex justify-between items-start mb-2">
-              <span class="text-xs text-sable/60 uppercase tracking-wider font-semibold">Réf. IMIS-CD03</span>
-              <span class="text-xs font-bold text-terracotta-light">Résidentiel Prestige</span>
-            </div>
-            <h2 class="font-display font-bold text-xl text-white mb-2">Villa Contemporaine 5 Pièces – Cadjèhoun</h2>
-            <p class="text-sable/70 text-xs leading-relaxed mb-4">
-              Propriété d'architecte avec finitions européennes, 4 suites avec salles de bain, piscine privée, groupe électrogène intégré et guérite de sécurité.
-            </p>
-            <div class="grid grid-cols-2 gap-2 text-xs py-3 border-y border-sable/10 text-sable/80">
-              <div>Chambres : <strong class="text-white">4 Suites</strong></div>
-              <div>Sécurité : <strong class="text-white">Blindée & Vidéo</strong></div>
-              <div>Garantie : <strong class="text-emerald-400">TF Notarié Net</strong></div>
-              <div>Disponibilité : <strong class="text-white">Immédiate</strong></div>
-            </div>
-          </div>
-        </div>
-        <div class="p-6 pt-0">
-          <a href="https://wa.me/2290153932286?text=Bonjour%20IMIS%20AFRIKA,%20je%20souhaite%20planifier%20une%20visite%20priv%C3%A9e%20de%20la%20Villa%20Cadj%C3%A8houn%20(R%C3%A9f.%20IMIS-CD03)." 
-             target="_blank" 
-             class="w-full bg-terracotta hover:bg-terracotta-hover text-white py-2.5 px-4 rounded text-xs font-bold tracking-wide flex items-center justify-center gap-2 transition-all">
-            <span>Dossier & Visite Privée</span>
-            <span>➔</span>
-          </a>
-        </div>
-      </article>
-
-      <!-- BIEN 4 : PARCELLE ARCONVILLE -->
-      <article class="property-card bg-onyx-card border border-sable/10 rounded-xl overflow-hidden hover:border-terracotta/40 transition-all flex flex-col justify-between"
-               data-type="terrain" data-loc="calavi">
-        <div>
-          <div class="relative h-60 bg-onyx-muted overflow-hidden">
-            <img src="assets/img/real-estate/parcelle-arconville.webp" alt="Parcelle résidentielle Arconville Abomey-Calavi" class="w-full h-full object-cover">
-            <span class="absolute top-3 left-3 bg-emerald-500 text-white text-[10px] font-extrabold px-2.5 py-1 rounded uppercase tracking-wider">
-              Titre Foncier Disponible
-            </span>
-            <span class="absolute bottom-3 right-3 bg-onyx/85 backdrop-blur-md text-sable text-xs font-semibold px-2.5 py-1 rounded">
-              Abomey-Calavi • Arconville
-            </span>
-          </div>
-          <div class="p-6">
-            <div class="flex justify-between items-start mb-2">
-              <span class="text-xs text-sable/60 uppercase tracking-wider font-semibold">Réf. IMIS-ARC04</span>
-              <span class="text-xs font-bold text-terracotta-light">Résidentiel</span>
-            </div>
-            <h2 class="font-display font-bold text-xl text-white mb-2">Parcelle d'Angle 620 m² – Quartier Arconville</h2>
-            <p class="text-sable/70 text-xs leading-relaxed mb-4">
-              Emplacement en angle de rue, excellente accessibilité pour projet de construction de villa ou d'immeuble R+2. Sol ferme et viabilisé.
-            </p>
-            <div class="grid grid-cols-2 gap-2 text-xs py-3 border-y border-sable/10 text-sable/80">
-              <div>Superficie : <strong class="text-white">620 m²</strong></div>
-              <div>Garantie : <strong class="text-emerald-400">TF Individuel</strong></div>
-              <div>Configuration : <strong class="text-white">Angle de rue</strong></div>
-              <div>Bornage : <strong class="text-white">Certifié</strong></div>
-            </div>
-          </div>
-        </div>
-        <div class="p-6 pt-0">
-          <a href="https://wa.me/2290153932286?text=Bonjour%20IMIS%20AFRIKA,%20je%20souhaite%20des%20d%C3%A9tails%20sur%20la%20Parcelle%20Arconville%20620m2%20(R%C3%A9f.%20IMIS-ARC04)." 
-             target="_blank" 
-             class="w-full bg-terracotta hover:bg-terracotta-hover text-white py-2.5 px-4 rounded text-xs font-bold tracking-wide flex items-center justify-center gap-2 transition-all">
-            <span>Dossier Cadastral & Visite</span>
-            <span>➔</span>
-          </a>
-        </div>
-      </article>
-
-      <!-- BIEN 5 : DOMAINE AGRO ALLADA -->
-      <article class="property-card bg-onyx-card border border-sable/10 rounded-xl overflow-hidden hover:border-terracotta/40 transition-all flex flex-col justify-between"
-               data-type="domaine" data-loc="allada">
-        <div>
-          <div class="relative h-60 bg-onyx-muted overflow-hidden">
-            <img src="assets/img/real-estate/domaine-allada.webp" alt="Domaine agricole Allada Bénin" class="w-full h-full object-cover">
-            <span class="absolute top-3 left-3 bg-emerald-500 text-white text-[10px] font-extrabold px-2.5 py-1 rounded uppercase tracking-wider">
-              Titre Foncier Global
-            </span>
-            <span class="absolute bottom-3 right-3 bg-onyx/85 backdrop-blur-md text-sable text-xs font-semibold px-2.5 py-1 rounded">
-              Allada • Périphérie
-            </span>
-          </div>
-          <div class="p-6">
-            <div class="flex justify-between items-start mb-2">
-              <span class="text-xs text-sable/60 uppercase tracking-wider font-semibold">Réf. IMIS-AG05</span>
-              <span class="text-xs font-bold text-terracotta-light">Agro-Business</span>
-            </div>
-            <h2 class="font-display font-bold text-xl text-white mb-2">Domaine Agricole 5 Hectares – Allada</h2>
-            <p class="text-sable/70 text-xs leading-relaxed mb-4">
-              Terre arable riche, nappe phréatique accessible à faible profondeur. Accès praticable toute l’année pour camions et gros engins. Idéal pour élevage ou culture d'ananas/palmiers.
-            </p>
-            <div class="grid grid-cols-2 gap-2 text-xs py-3 border-y border-sable/10 text-sable/80">
-              <div>Superficie : <strong class="text-white">5 Hectares</strong></div>
-              <div>Garantie : <strong class="text-emerald-400">TF Vérifié</strong></div>
-              <div>Ressource Eau : <strong class="text-white">Excellente</strong></div>
-              <div>Accessibilité : <strong class="text-white">Piste lourde</strong></div>
-            </div>
-          </div>
-        </div>
-        <div class="p-6 pt-0">
-          <a href="https://wa.me/2290153932286?text=Bonjour%20IMIS%20AFRIKA,%20je%20souhaite%20recevoir%20le%20dossier%20du%20Domaine%20Agricole%205Ha%20Allada%20(R%C3%A9f.%20IMIS-AG05)." 
-             target="_blank" 
-             class="w-full bg-terracotta hover:bg-terracotta-hover text-white py-2.5 px-4 rounded text-xs font-bold tracking-wide flex items-center justify-center gap-2 transition-all">
-            <span>Dossier Cadastral & Visite</span>
-            <span>➔</span>
-          </a>
-        </div>
-      </article>
-
-      <!-- BIEN 6 : IMMEUBLE MIXTE AKPAKPA -->
-      <article class="property-card bg-onyx-card border border-sable/10 rounded-xl overflow-hidden hover:border-terracotta/40 transition-all flex flex-col justify-between"
-               data-type="villa" data-loc="cotonou">
-        <div>
-          <div class="relative h-60 bg-onyx-muted overflow-hidden">
-            <img src="assets/img/real-estate/immeuble-akpakpa.webp" alt="Immeuble de rapport Cotonou Akpakpa" class="w-full h-full object-cover">
-            <span class="absolute top-3 left-3 bg-terracotta text-white text-[10px] font-extrabold px-2.5 py-1 rounded uppercase tracking-wider">
-              Rendement Locatif
-            </span>
-            <span class="absolute bottom-3 right-3 bg-onyx/85 backdrop-blur-md text-sable text-xs font-semibold px-2.5 py-1 rounded">
-              Cotonou • Akpakpa
-            </span>
-          </div>
-          <div class="p-6">
-            <div class="flex justify-between items-start mb-2">
-              <span class="text-xs text-sable/60 uppercase tracking-wider font-semibold">Réf. IMIS-AK06</span>
-              <span class="text-xs font-bold text-terracotta-light">Immeuble de Rapport</span>
-            </div>
-            <h2 class="font-display font-bold text-xl text-white mb-2">Immeuble R+2 Mixte Bureaux & Logements</h2>
-            <p class="text-sable/70 text-xs leading-relaxed mb-4">
-              Composé de 2 plateaux de bureaux au rez-de-chaussée et de 4 appartements standing aux étages. Taux d'occupation actuel de 90%, rendement locatif immédiat.
-            </p>
-            <div class="grid grid-cols-2 gap-2 text-xs py-3 border-y border-sable/10 text-sable/80">
-              <div>Typologie : <strong class="text-white">R+2 Mixte</strong></div>
-              <div>Garantie : <strong class="text-emerald-400">TF Individuel</strong></div>
-              <div>Rendement : <strong class="text-emerald-400">9% Brut Est.</strong></div>
-              <div>État : <strong class="text-white">Parfait état</strong></div>
-            </div>
-          </div>
-        </div>
-        <div class="p-6 pt-0">
-          <a href="https://wa.me/2290153932286?text=Bonjour%20IMIS%20AFRIKA,%20je%20souhaite%20consulter%20les%20chiffres%20de%20l'Immeuble%20R%2B2%20Akpakpa%20(R%C3%A9f.%20IMIS-AK06)." 
-             target="_blank" 
-             class="w-full bg-terracotta hover:bg-terracotta-hover text-white py-2.5 px-4 rounded text-xs font-bold tracking-wide flex items-center justify-center gap-2 transition-all">
-            <span>Dossier Financier & Visite</span>
-            <span>➔</span>
-          </a>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- ========================================================================= -->
-  <!-- 6. LE GUICHET DIASPORA & ENTREPRISE : MANDAT DE RECHERCHE SUR MESURE      -->
-  <!-- ========================================================================= -->
-  <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-    <div class="bg-gradient-to-r from-onyx-card via-onyx-muted to-onyx-card border border-terracotta/30 rounded-2xl p-8 sm:p-12 flex flex-col lg:flex-row items-center justify-between gap-8">
-      <div class="max-w-2xl">
-        <span class="text-xs font-bold text-terracotta-light uppercase tracking-wider">Service Sur Mesure</span>
-        <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-white mt-2 mb-3">
-          Vous ne trouvez pas la parcelle correspondant à vos critères ?
-        </h2>
-        <p class="text-sable/70 text-sm leading-relaxed">
-          Confiez votre cahier des charges foncier à notre cellule terrain. Nous prospectons directement auprès des propriétaires vérifiés, réalisons le pré-audit notarié et vous soumettons des opportunités exclusives sous 10 jours.
-        </p>
+    <div class="container footer-content-wrap">
+      
+      <div class="footer-brand-badge">
+        <svg viewBox="0 0 100 100" class="badge-icon-svg" fill="none">
+          <polygon points="50,10 88,32 88,68 50,90 12,68 12,32" stroke="#FFFFFF" stroke-width="8" fill="rgba(255, 255, 255, 0.15)"/>
+          <text x="50" y="62" font-family="'Syne', sans-serif" font-weight="800" font-size="34" fill="#FFFFFF" text-anchor="middle">IA</text>
+        </svg>
       </div>
-      <div class="whitespace-nowrap">
-        <a href="https://wa.me/2290153932286?text=Bonjour%20la%20Direction%20IMIS%20AFRIKA,%20je%20souhaite%20vous%20confier%20un%20mandat%20de%20recherche%20foncier%20personnalis%C3%A9." 
-           target="_blank" 
-           class="inline-flex items-center gap-3 bg-terracotta hover:bg-terracotta-hover text-white px-8 py-4 rounded font-bold text-sm shadow-xl shadow-terracotta/20 transition-all active:scale-95">
-          <span>Déposer un Mandat de Recherche</span>
-          <span>➔</span>
-        </a>
-      </div>
-    </div>
-  </section>
 
-  <!-- ========================================================================= -->
-  <!-- 7. FOOTER INSTITUTIONNEL                                                  -->
-  <!-- ========================================================================= -->
-  <footer class="bg-onyx-card border-t border-sable/10 pt-16 pb-12 text-sm text-sable/80">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
-      <div class="space-y-4">
-        <div class="flex items-center gap-2">
-          <span class="font-display font-extrabold text-xl text-white">IMIS</span>
-          <span class="text-xs tracking-[0.3em] text-sable font-bold uppercase">AFRIKA</span>
-        </div>
-        <p class="text-xs text-sable/70 leading-relaxed">
-          Société à Responsabilité Limitée régie par le droit OHADA.<br>
-          Gérance assurée par <strong class="text-white">Koffi Olivier HOUNKPE</strong>.
-        </p>
-        <div class="text-[11px] text-sable/60 pt-2 border-t border-sable/10">
-          RCCM Cotonou : <strong>N° RB/ABC/26 B 12115</strong><br>
-          Siège : Ilot 11, Quartier Zopah, Abomey-Calavi
-        </div>
+      <h3 class="footer-company-name">IMIS AFRIKA S.A.R.L.</h3>
+
+      <p class="footer-tagline">
+        <span>Foncier Sécurisé</span>
+        <span class="dot">·</span>
+        <span>Stratégie de Marque</span>
+        <span class="dot">·</span>
+        <span>Impact</span>
+      </p>
+
+      <p class="footer-location">
+        Ilot 11, Quartier Zopah, Abomey-Calavi, République du Bénin
+      </p>
+
+      <div class="footer-legal-links">
+        <span>RCCM Cotonou : RB/ABC/26 B 12115</span>
+        <span class="sep">|</span>
+        <a href="contact.html#mentions-legales">Mentions légales et confidentialité</a>
       </div>
-      <div>
-        <h4 class="font-bold text-white text-xs uppercase tracking-wider mb-4">Navigation Rapide</h4>
-        <ul class="space-y-2 text-xs">
-          <li><a href="index.html" class="hover:text-white transition-colors">Accueil</a></li>
-          <li><a href="biens-terrains.html" class="hover:text-white transition-colors">Nos Biens & Terrains</a></li>
-          <li><a href="services.html" class="hover:text-white transition-colors">Services & Expertises</a></li>
-          <li><a href="conseils.html" class="hover:text-white transition-colors">Conseils & Analyses (Blog)</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-bold text-white text-xs uppercase tracking-wider mb-4">Garanties Juridiques</h4>
-        <ul class="space-y-2 text-xs">
-          <li><span class="text-emerald-400">✓</span> Titre Foncier (TF) vérifié ANDF</li>
-          <li><span class="text-emerald-400">✓</span> Bornage contradictoire certifié</li>
-          <li><span class="text-emerald-400">✓</span> Actes notariés authentiques</li>
-          <li><span class="text-emerald-400">✓</span> Zéro litige ou hypothèque</li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-bold text-white text-xs uppercase tracking-wider mb-4">Desk d'Affaires</h4>
-        <address class="not-italic text-xs text-sable/70 space-y-2">
-          <p>Desk 1 : <a href="tel:+2290153932286" class="text-white hover:text-terracotta-light">+229 01 53 93 22 86</a></p>
-          <p>Desk 2 : <a href="tel:+2290196177515" class="text-white hover:text-terracotta-light">+229 01 96 17 75 15</a></p>
-          <p>Email : <span class="text-white">contact@imisafrika.bj</span></p>
-        </address>
-      </div>
-    </div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-sable/10 flex flex-col sm:flex-row justify-between items-center text-xs text-sable/50 gap-4">
-      <p>© 2026 IMIS AFRIKA S.A.R.L. Tous droits réservés.</p>
-      <div class="flex gap-6">
-        <a href="contact.html" class="hover:text-white">Mentions Légales</a>
-        <a href="contact.html" class="hover:text-white">Politique de Confidentialité</a>
-      </div>
+
+      <p class="footer-copyright">
+        © 2026 IMIS AFRIKA S.A.R.L. Tous droits réservés.
+      </p>
+
     </div>
   </footer>
 
-  <!-- ========================================================================= -->
-  <!-- SCRIPT DE FILTRAGE INSTANTANÉ EN VANILLA JS (< 2 Ko, ZÉRO LATENCE 4G)    -->
-  <!-- ========================================================================= -->
-  <script>
-    let currentType = 'all';
-    let currentLoc = 'all';
+  <!-- =========================================================================
+       BARRE FLOTTANTE D'ACTION BASSE (STYLE PILL BAR)
+       ========================================================================= -->
+  <div class="floating-pill-wrap">
+    <div class="floating-pill-content">
+      <div class="pill-text">
+        <span class="pill-title">Un terrain ou un actif à auditer ?</span>
+        <span class="pill-sub">Audit cadastral ANDF préalable • Réponse 24h</span>
+      </div>
+      <a href="https://wa.me/2290153932286?text=Bonjour%20IMIS%20AFRIKA,%20je%20souhaite%20faire%20auditer%20un%20bien%20foncier." 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         class="pill-btn">
+        Consulter le Desk
+      </a>
+    </div>
+  </div>
 
-    function filterProperties(type) {
-      currentType = type;
-      // Mise à jour de l'état actif des boutons type
-      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
-      event.target.classList.add('active');
-      applyFilters();
-    }
-
-    function filterLocation(loc) {
-      currentLoc = loc;
-      // Mise à jour visuelle des liens localité
-      document.querySelectorAll('.loc-btn').forEach(btn => {
-        btn.classList.remove('underline', 'text-white', 'font-bold');
-        btn.classList.add('text-sable/70');
-      });
-      event.target.classList.add('underline', 'text-white', 'font-bold');
-      applyFilters();
-    }
-
-    function applyFilters() {
-      const cards = document.querySelectorAll('.property-card');
-      let visibleCount = 0;
-
-      cards.forEach(card => {
-        const matchesType = (currentType === 'all' || card.dataset.type === currentType);
-        const matchesLoc = (currentLoc === 'all' || card.dataset.loc === currentLoc);
-
-        if (matchesType && matchesLoc) {
-          card.style.display = 'flex';
-          visibleCount++;
-        } else {
-          card.style.display = 'none';
-        }
-      });
-
-      document.getElementById('count-all').innerText = visibleCount;
-    }
-
-    // Gestion automatique des paramètres URL (ex: ?type=terrain depuis l'accueil)
-    document.addEventListener('DOMContentLoaded', () => {
-      const urlParams = new URLSearchParams(window.location.search);
-      const typeParam = urlParams.get('type');
-      const zoneParam = urlParams.get('zone');
-
-      if (typeParam && ['terrain', 'domaine', 'villa'].includes(typeParam)) {
-        filterProperties(typeParam);
-        const activeBtn = Array.from(document.querySelectorAll('.filter-btn')).find(b => b.innerText.toLowerCase().includes(typeParam));
-        if (activeBtn) {
-          document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-          activeBtn.classList.add('active');
-        }
-      }
-      if (zoneParam) {
-        if (zoneParam.includes('calavi')) filterLocation('calavi');
-        else if (zoneParam.includes('ouidah')) filterLocation('ouidah');
-        else if (zoneParam.includes('cotonou')) filterLocation('cotonou');
-        else if (zoneParam.includes('allada')) filterLocation('allada');
-      }
-    });
-  </script>
-
+  <!-- SCRIPT MOTEUR JAVASCRIPT MODULAIRE (PILOTE LES FILTRES ET LE MENU) -->
+  <script src="js/main.js" defer></script>
 </body>
 </html>
