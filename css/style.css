@@ -1,0 +1,533 @@
+/* ==========================================================================
+   IMIS AFRIKA S.A.R.L. — DESIGN SYSTEM OFFICIEL
+   Direction Artistique : Terracotta Minéral • Sable Nude • Noir Onyx
+   ========================================================================== */
+
+/* 1. VARIABLES GLOBALES */
+:root {
+  --color-terracotta: #9E472A;
+  --color-terracotta-hover: #B85D36;
+  --color-terracotta-light: #C77551;
+  --color-terracotta-glow: rgba(158, 71, 42, 0.25);
+
+  --color-sable: #E5D7D0;
+  --color-sable-nude: #F3ECE7;
+  --color-sable-muted: rgba(229, 215, 208, 0.7);
+
+  --color-onyx-deep: #111111;
+  --color-onyx-card: #181818;
+  --color-onyx-muted: #222222;
+  --color-onyx-border: rgba(229, 215, 208, 0.12);
+
+  --color-white: #FFFFFF;
+  --color-emerald: #10B981;
+
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-heading: 'Syne', system-ui, -apple-system, sans-serif;
+
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* 2. RESET & BASE */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--color-onyx-deep);
+  color: var(--color-sable-nude);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+/* 3. LAYOUT & CONTENEURS */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* 4. BANDEAU DE RÉASSURANCE HAUT */
+.top-bar {
+  background-color: var(--color-onyx-card);
+  border-bottom: 1px solid var(--color-onyx-border);
+  padding: 0.5rem 0;
+  font-size: 0.75rem;
+  color: var(--color-sable-muted);
+}
+.top-bar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.top-bar-right a:hover {
+  color: var(--color-terracotta-light);
+}
+
+/* 5. NAVIGATION PRINCIPALE (STICKY & DYNAMIQUE) */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(17, 17, 17, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--color-onyx-border);
+  transition: padding var(--transition-fast), background var(--transition-fast);
+}
+.navbar.scrolled {
+  padding: 0.25rem 0;
+  background: rgba(17, 17, 17, 0.95);
+  border-bottom-color: rgba(158, 71, 42, 0.3);
+}
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+/* Logo */
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.logo-icon {
+  width: 42px;
+  height: 42px;
+}
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+.logo-title {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: var(--color-white);
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+.logo-sub {
+  font-size: 0.55rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--color-sable);
+  font-weight: 700;
+}
+
+/* Menu desktop */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+}
+.nav-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-sable-muted);
+  position: relative;
+  padding: 0.5rem 0;
+}
+.nav-link:hover, .nav-link.active {
+  color: var(--color-white);
+}
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-terracotta);
+}
+
+/* Boutons CTA */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-terracotta);
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 14px var(--color-terracotta-glow);
+  transition: all var(--transition-fast);
+  border: none;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background-color: var(--color-terracotta-hover);
+  transform: translateY(-2px);
+}
+
+/* Menu Burger Mobile */
+.burger-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+.burger-bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin: 5px auto;
+  background-color: var(--color-white);
+  transition: all var(--transition-smooth);
+}
+.burger-btn.is-active .burger-bar:nth-child(2) {
+  opacity: 0;
+}
+.burger-btn.is-active .burger-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.burger-btn.is-active .burger-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Drawer Mobile */
+.mobile-drawer {
+  position: fixed;
+  top: 80px;
+  right: -100%;
+  width: 100%;
+  height: calc(100vh - 80px);
+  background-color: var(--color-onyx-deep);
+  border-top: 1px solid var(--color-onyx-border);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: right var(--transition-smooth);
+  z-index: 999;
+}
+.mobile-drawer.is-open {
+  right: 0;
+}
+.mobile-drawer .nav-link {
+  font-size: 1.25rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--color-onyx-border);
+}
+
+/* 6. HERO VIDÉO SECTION */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 0;
+  overflow: hidden;
+}
+.hero-video-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(17, 17, 17, 0.75) 0%,
+    rgba(17, 17, 17, 0.55) 50%,
+    rgba(17, 17, 17, 0.98) 100%
+  );
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+}
+.badge-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 1rem;
+  background: rgba(24, 24, 24, 0.8);
+  border: 1px solid var(--color-onyx-border);
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+}
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 800;
+  color: var(--color-white);
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+.hero-title span {
+  background: linear-gradient(90deg, var(--color-sable), var(--color-white), var(--color-terracotta-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-desc {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--color-sable-muted);
+  max-width: 720px;
+  margin: 0 auto 2.5rem;
+}
+
+/* 7. MOTEUR DE RECHERCHE FONCIER (GLASSMORPHISM) */
+.search-widget {
+  background: rgba(24, 24, 24, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--color-onyx-border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  text-align: left;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+.search-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) 160px;
+  gap: 1rem;
+  align-items: flex-end;
+}
+.form-group label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-sable-muted);
+  margin-bottom: 0.35rem;
+}
+.form-control {
+  width: 100%;
+  background: rgba(17, 17, 17, 0.9);
+  border: 1px solid var(--color-onyx-border);
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: var(--color-white);
+  font-size: 0.85rem;
+  font-family: var(--font-body);
+}
+.form-control:focus {
+  outline: none;
+  border-color: var(--color-terracotta);
+}
+
+/* 8. CARTES DE BIENS & FILTRES */
+.filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.tab-btn {
+  background: var(--color-onyx-card);
+  border: 1px solid var(--color-onyx-border);
+  color: var(--color-sable);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.6rem 1.25rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+.tab-btn.active, .tab-btn:hover {
+  background: var(--color-terracotta);
+  border-color: var(--color-terracotta);
+  color: var(--color-white);
+}
+
+.properties-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+.property-card {
+  background: var(--color-onyx-card);
+  border: 1px solid var(--color-onyx-border);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform var(--transition-smooth), border-color var(--transition-smooth);
+}
+.property-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(158, 71, 42, 0.4);
+}
+.card-media {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+}
+.card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.property-card:hover .card-media img {
+  transform: scale(1.05);
+}
+.card-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: var(--color-emerald);
+  color: var(--color-white);
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+}
+.card-body {
+  padding: 1.5rem;
+}
+.card-title {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin: 0.5rem 0 0.75rem;
+}
+.card-specs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--color-onyx-border);
+  border-bottom: 1px solid var(--color-onyx-border);
+  margin-top: 1rem;
+  font-size: 0.75rem;
+}
+.card-footer {
+  padding: 1.5rem;
+  padding-top: 0;
+}
+
+/* 9. MODALE INTERACTIVE RAPIDE */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  z-index: 2000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.modal-overlay.is-active {
+  display: flex;
+}
+.modal-container {
+  background: var(--color-onyx-card);
+  border: 1px solid var(--color-terracotta);
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+}
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: var(--color-sable);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* 10. FOOTER */
+.site-footer {
+  background: var(--color-onyx-card);
+  border-top: 1px solid var(--color-onyx-border);
+  padding: 4rem 0 2rem;
+  font-size: 0.85rem;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+.footer-title {
+  color: var(--color-white);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer-bottom {
+  border-top: 1px solid var(--color-onyx-border);
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  color: var(--color-sable-muted);
+}
+
+/* 11. RESPONSIVE BREAKPOINTS */
+@media (max-width: 992px) {
+  .nav-menu { display: none; }
+  .burger-btn { display: block; }
+  .search-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .top-bar { display: none; }
+  .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+}
