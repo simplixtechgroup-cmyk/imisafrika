@@ -4,72 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   
-  <!-- SEO & ENTITY GRAPH POUR BLOG D'AUTORITÉ -->
+  <!-- =========================================================================
+       1. SEO D'AUTORITÉ & BLOG KNOWLEDGE GRAPH
+       ========================================================================= -->
   <title>Conseils & Analyses Foncières au Bénin | L'Observatoire IMIS AFRIKA</title>
-  <meta name="description" content="Guides juridiques, décryptage du Code Foncier et Domanial béninois, procédures ANDF et stratégies d'investissement immobilier sécurisé pour entreprises et diaspora.">
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="description" content="Guides juridiques, vulgarisation du Code Foncier et Domanial béninois, démarches ANDF et stratégies d'investissement immobilier pour entreprises et diaspora.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="author" content="IMIS AFRIKA S.A.R.L.">
+  <link rel="canonical" href="https://imisafrika.bj/conseils.html">
+
+  <!-- GÉOLOCALISATION SÉMANTIQUE -->
   <meta name="geo.region" content="BJ-AQ">
   <meta name="geo.placename" content="Abomey-Calavi, Quartier Zopah">
+  <meta name="geo.position" content="6.4485;2.3557">
+  <meta name="ICBM" content="6.4485, 2.3557">
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="blog">
+  <meta property="og:site_name" content="IMIS AFRIKA S.A.R.L.">
+  <meta property="og:title" content="L'Observatoire du Foncier Béninois | IMIS AFRIKA">
+  <meta property="og:description" content="Comprendre les lois, maîtriser les formalités ANDF et sécuriser ses acquisitions immobilières au Bénin.">
+  <meta property="og:url" content="https://imisafrika.bj/conseils.html">
+  <meta property="og:image" content="https://imisafrika.bj/assets/img/og-conseils.webp">
 
   <!-- RESSOURCES CRITIQUES -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 
-  <!-- TAILWIND CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            terracotta: {
-              DEFAULT: '#9E472A',
-              hover: '#B85D36',
-              light: '#C77551',
-              dark: '#7A321B'
-            },
-            sable: {
-              DEFAULT: '#E5D7D0',
-              nude: '#F3ECE7',
-              light: '#FAF7F5'
-            },
-            onyx: {
-              DEFAULT: '#111111',
-              card: '#181818',
-              muted: '#222222'
-            }
-          },
-          fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            display: ['"Syne"', 'sans-serif']
-          }
-        }
-      }
-    }
-  </script>
+  <!-- FEUILLE DE STYLE EXTERNE PURE (DÉCOUPLÉE) -->
+  <link rel="stylesheet" href="css/style.css">
 
-  <style>
-    body {
-      background-color: #111111;
-      color: #FAF7F5;
-      font-family: 'Plus Jakarta Sans', sans-serif;
-    }
-    .article-filter.active {
-      background-color: #9E472A;
-      color: #FFFFFF;
-      border-color: #9E472A;
-    }
-  </style>
-
-  <!-- SCHEMA.ORG BLOG / PUBLISHER GRAPH -->
+  <!-- SCHEMA.ORG BLOG GRAPH -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Blog",
     "name": "L'Observatoire Foncier & Stratégique - IMIS AFRIKA",
     "url": "https://imisafrika.bj/conseils.html",
-    "description": "Publication d'autorité spécialisée dans le droit foncier, l'investissement immobilier et les stratégies de valorisation au Bénin.",
+    "description": "Publication juridique et stratégique spécialisée dans le droit foncier et l'investissement au Bénin.",
     "publisher": {
       "@type": "Organization",
       "name": "IMIS AFRIKA S.A.R.L.",
@@ -86,404 +59,368 @@
   </script>
 </head>
 
-<body class="selection:bg-terracotta selection:text-white">
+<body>
 
-  <!-- ========================================================================= -->
-  <!-- 1. BANDEAU DE RÉASSURANCE                                                 -->
-  <!-- ========================================================================= -->
-  <aside class="bg-onyx-card border-b border-sable/10 py-2 px-4 text-xs text-sable/80 hidden sm:block">
-    <div class="max-w-7xl mx-auto flex justify-between items-center">
-      <div class="flex items-center gap-3">
-        <span class="inline-flex items-center gap-1.5 text-emerald-400 font-semibold">
-          <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-          Veille Juridique & Immobilière Active
-        </span>
-        <span class="text-sable/30">•</span>
+  <!-- =========================================================================
+       BANDEAU SUPÉRIEUR DE CONFIANCE
+       ========================================================================= -->
+  <aside class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-left">
+        <span class="live-dot"></span>
+        <span class="text-highlight">Veille Juridique Active</span>
+        <span class="separator">•</span>
         <span>Conformité Code Foncier Béninois</span>
-        <span class="text-sable/30">•</span>
-        <span>RCCM : RB/ABC/26 B 12115</span>
+        <span class="separator">•</span>
+        <span>RCCM Cotonou : RB/ABC/26 B 12115</span>
       </div>
-      <div class="flex items-center gap-4 font-medium">
-        <a href="tel:+2290153932286" class="hover:text-terracotta-light transition-colors">+229 01 53 93 22 86</a>
-        <span class="text-sable/30">|</span>
-        <a href="tel:+2290196177515" class="hover:text-terracotta-light transition-colors">+229 01 96 17 75 15</a>
+      <div class="top-bar-right">
+        <a href="tel:+2290153932286">+229 01 53 93 22 86</a>
+        <span class="separator">|</span>
+        <a href="tel:+2290196177515">+229 01 96 17 75 15</a>
       </div>
     </div>
   </aside>
 
-  <!-- ========================================================================= -->
-  <!-- 2. NAVIGATION PRINCIPALE                                                  -->
-  <!-- ========================================================================= -->
-  <header class="sticky top-0 z-50 w-full bg-onyx/90 backdrop-blur-md border-b border-sable/10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+  <!-- =========================================================================
+       NAVIGATION PRINCIPALE STICKY
+       ========================================================================= -->
+  <header class="navbar" id="main-navbar">
+    <div class="container navbar-container">
       
-      <a href="index.html" class="flex items-center gap-3 group">
-        <div class="relative w-10 h-10 flex items-center justify-center">
-          <svg viewBox="0 0 100 100" class="w-full h-full" fill="none">
+      <a href="index.html" class="brand-logo" aria-label="IMIS AFRIKA - Accueil">
+        <div class="logo-icon-wrap">
+          <svg viewBox="0 0 100 100" class="logo-svg" fill="none">
             <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" stroke="#9E472A" stroke-width="8" fill="rgba(158, 71, 42, 0.15)" />
             <polygon points="50,20 78,36 78,64 50,80 22,64 22,36" stroke="#E5D7D0" stroke-width="4" fill="none" opacity="0.6"/>
           </svg>
         </div>
-        <div class="flex flex-col">
-          <span class="font-display font-extrabold text-xl tracking-wider text-white">IMIS</span>
-          <span class="text-[9px] tracking-[0.35em] text-sable font-bold uppercase -mt-1">AFRIKA</span>
+        <div class="logo-text">
+          <span class="logo-title">IMIS</span>
+          <span class="logo-sub">AFRIKA</span>
         </div>
       </a>
 
-      <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold">
-        <a href="index.html" class="text-sable/80 hover:text-white transition-colors">Accueil</a>
-        <a href="biens-terrains.html" class="text-sable/80 hover:text-white transition-colors">Nos Biens & Terrains</a>
-        <a href="services.html" class="text-sable/80 hover:text-white transition-colors">Services & Expertises</a>
-        <a href="conseils.html" class="text-white border-b-2 border-terracotta pb-1 flex items-center gap-1.5">
-          <span>Conseils & Analyses</span>
-          <span class="bg-terracotta text-white text-[10px] px-1.5 py-0.5 rounded font-bold">BLOG</span>
-        </a>
-        <a href="contact.html" class="text-sable/80 hover:text-white transition-colors">Contact</a>
+      <nav aria-label="Navigation principale">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Accueil</a></li>
+          <li><a href="biens-terrains.html" class="nav-link">Nos Biens & Terrains</a></li>
+          <li><a href="services.html" class="nav-link">Services & Expertises</a></li>
+          <li>
+            <a href="conseils.html" class="nav-link active nav-blog-pill">
+              <span>Conseils & Analyses</span>
+              <span class="micro-badge">BLOG</span>
+            </a>
+          </li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
       </nav>
 
-      <div class="flex items-center gap-3">
-        <a href="https://wa.me/2290153932286?text=Bonjour%20IMIS%20AFRIKA,%20je%20souhaite%20un%20conseil%20juridique%20sur%20un%20dossier%20foncier." 
+      <div class="nav-actions">
+        <a href="https://wa.me/2290153932286?text=Bonjour%20la%20Cellule%20Juridique%20IMIS%20AFRIKA,%20je%20souhaite%20un%20conseil%20sur%20un%20dossier%20foncier." 
            target="_blank" 
            rel="noopener noreferrer" 
-           class="inline-flex items-center gap-2 bg-terracotta hover:bg-terracotta-hover text-white text-xs sm:text-sm font-bold px-4 py-2.5 rounded shadow-lg shadow-terracotta/20 transition-all active:scale-95">
-          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+           class="btn-primary">
+          <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.539 1.77.818 2.791.819h.005c3.18 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.765-5.768-5.765zm0-2.172c4.418 0 8 3.582 8 8 0 4.417-3.582 8-8 8a7.96 7.96 0 0 1-4.048-1.096L2 20.245l1.373-5.836A7.95 7.95 0 0 1 4.03 12c0-4.418 3.582-8 8-8z"/>
           </svg>
-          <span>Desk WhatsApp</span>
+          <span>Desk Juridique</span>
         </a>
+
+        <button class="burger-btn" aria-label="Ouvrir le menu mobile">
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+        </button>
       </div>
+
     </div>
   </header>
 
-  <!-- ========================================================================= -->
-  <!-- 3. EN-TÊTE DE L'OBSERVATOIRE & LEAD MAGNET                                -->
-  <!-- ========================================================================= -->
-  <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-b border-sable/10">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-      
-      <div class="lg:col-span-7">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-terracotta/15 border border-terracotta/30 text-terracotta-light text-xs font-bold uppercase tracking-wider mb-4">
-          <span class="w-1.5 h-1.5 rounded-full bg-terracotta"></span>
-          L'Observatoire du Foncier Béninois
+  <!-- DRAWER MOBILE -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <a href="index.html" class="nav-link">Accueil</a>
+    <a href="biens-terrains.html" class="nav-link">Nos Biens & Terrains</a>
+    <a href="services.html" class="nav-link">Services & Expertises</a>
+    <a href="conseils.html" class="nav-link active">Conseils & Analyses</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="https://wa.me/2290153932286" target="_blank" class="btn-primary mt-4">
+      <span>Contacter le Desk WhatsApp</span>
+    </a>
+  </div>
+
+  <!-- =========================================================================
+       EN-TÊTE DE L'OBSERVATOIRE & LEAD MAGNET EMBARQUÉ
+       ========================================================================= -->
+  <section class="page-header border-b">
+    <div class="container">
+      <div class="blog-header-grid">
+        
+        <div class="blog-header-meta">
+          <span class="sub-badge">L'Observatoire du Foncier Béninois</span>
+          <h1 class="page-title">Guides Juridiques & Décryptages Stratégiques</h1>
+          <p class="page-desc">
+            Comprendre la législation foncière, maîtriser les formalités de l'Agence Nationale du Domaine et du Foncier (ANDF) et investir avec lucidité au Bénin.
+          </p>
         </div>
-        <h1 class="font-display font-extrabold text-3xl sm:text-5xl text-white tracking-tight leading-tight mb-4">
-          Guides Juridiques & Analyses Immobilières Stratégiques
-        </h1>
-        <p class="text-sable/80 text-sm sm:text-base leading-relaxed">
-          Comprendre les lois, maîtriser les formalités de l'Agence Nationale du Domaine et du Foncier (ANDF) et investir avec lucidité au Bénin. Notre cellule juridique et d'ingénierie partage ses protocoles de terrain.
-        </p>
-      </div>
 
-      <!-- ENCART LEAD MAGNET (CAPTURE DE PROSPECTS CHAUDS) -->
-      <div class="lg:col-span-5 bg-onyx-card border border-terracotta/30 rounded-xl p-6 sm:p-7 relative overflow-hidden">
-        <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-terracotta/10 rounded-full blur-2xl pointer-events-none"></div>
-        <span class="text-[10px] font-extrabold uppercase tracking-widest text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded">
-          Document Gratuit 2026
-        </span>
-        <h3 class="font-display font-bold text-lg text-white mt-3 mb-2">
-          La Checklist en 10 Points de l'Acheteur au Bénin
-        </h3>
-        <p class="text-sable/70 text-xs leading-relaxed mb-5">
-          Le mémo indispensable pour vérifier une convention, éviter le double achat et exiger les pièces légales avant tout transfert d'argent.
-        </p>
-        <a href="https://wa.me/2290153932286?text=Bonjour%20IMIS%20AFRIKA,%20je%20souhaite%20recevoir%20gratuitement%20la%20Checklist%20de%20S%C3%A9curisation%20Fonci%C3%A8re%20en%2010%20points." 
-           target="_blank" 
-           class="inline-flex items-center justify-center gap-2 w-full bg-terracotta hover:bg-terracotta-hover text-white text-xs font-bold py-3 px-4 rounded shadow-md shadow-terracotta/25 transition-all">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-          <span>Recevoir la Checklist par WhatsApp</span>
-        </a>
-      </div>
+        <!-- Lead Magnet : Téléchargement Checklist -->
+        <div class="lead-magnet-box">
+          <span class="lead-magnet-badge">Document Gratuit 2026</span>
+          <h2 class="lead-magnet-title">La Checklist en 10 Points de l'Acheteur au Bénin</h2>
+          <p class="lead-magnet-text">
+            Le mémo indispensable pour vérifier une convention, éviter le double achat et exiger les pièces légales avant tout versement d'acompte.
+          </p>
+          <a href="https://wa.me/2290153932286?text=Bonjour%20IMIS%20AFRIKA,%20je%20souhaite%20recevoir%20gratuitement%20la%20Checklist%20de%20S%C3%A9curisation%20Fonci%C3%A8re%20en%2010%20points." 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn-primary btn-lead-magnet">
+            <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/>
+            </svg>
+            <span>Recevoir la Checklist par WhatsApp</span>
+          </a>
+        </div>
 
+      </div>
     </div>
   </section>
 
-  <!-- ========================================================================= -->
-  <!-- 4. FILTRE DES ARTICLES PAR THÉMATIQUE                                     -->
-  <!-- ========================================================================= -->
-  <section class="py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-    <div class="flex flex-wrap items-center gap-2 sm:gap-3">
-      <span class="text-xs font-bold text-sable/50 uppercase tracking-wider mr-2 hidden sm:inline">Thématique :</span>
-      <button onclick="filterBlog('all')" class="article-filter active px-4 py-2 rounded text-xs font-bold border border-sable/20 text-sable transition-all">
-        Tous les Guides (<span id="blog-count">5</span>)
-      </button>
-      <button onclick="filterBlog('droit')" class="article-filter px-4 py-2 rounded text-xs font-bold border border-sable/20 text-sable hover:border-terracotta transition-all">
-        Droit Foncier & ANDF
-      </button>
-      <button onclick="filterBlog('diaspora')" class="article-filter px-4 py-2 rounded text-xs font-bold border border-sable/20 text-sable hover:border-terracotta transition-all">
-        Investissement Diaspora
-      </button>
-      <button onclick="filterBlog('marche')" class="article-filter px-4 py-2 rounded text-xs font-bold border border-sable/20 text-sable hover:border-terracotta transition-all">
-        Tendances & Urbanisme
-      </button>
-      <button onclick="filterBlog('strategie')" class="article-filter px-4 py-2 rounded text-xs font-bold border border-sable/20 text-sable hover:border-terracotta transition-all">
-        Stratégie & Marque
-      </button>
+  <!-- =========================================================================
+       FILTRAGE PAR THÉMATIQUE
+       ========================================================================= -->
+  <section class="filter-section">
+    <div class="container">
+      <div class="filter-tabs">
+        <button class="tab-btn active" data-blog-filter="all">Tous les Guides</button>
+        <button class="tab-btn" data-blog-filter="droit">Droit Foncier & ANDF</button>
+        <button class="tab-btn" data-blog-filter="diaspora">Investissement Diaspora</button>
+        <button class="tab-btn" data-blog-filter="marche">Tendances & Urbanisme</button>
+        <button class="tab-btn" data-blog-filter="strategie">Stratégie & Marque</button>
+      </div>
     </div>
   </section>
 
-  <!-- ========================================================================= -->
-  <!-- 5. ARTICLE À LA UNE (COVER STORY DE HAUTE AUTORITÉ)                       -->
-  <!-- ========================================================================= -->
-  <section class="pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-    <article class="blog-card bg-onyx-card border border-terracotta/30 rounded-2xl overflow-hidden hover:border-terracotta/60 transition-all grid grid-cols-1 lg:grid-cols-12 gap-0"
-             data-category="droit">
-      <div class="lg:col-span-6 relative min-h-[300px] lg:min-h-full bg-onyx-muted overflow-hidden">
-        <img src="assets/img/creative/guide-andf-couverture.webp" alt="Sécurisation foncière avec l'ANDF au Bénin" class="w-full h-full object-cover">
-        <span class="absolute top-4 left-4 bg-terracotta text-white text-xs font-extrabold px-3 py-1.5 rounded uppercase tracking-wider">
-          Enquête Juridique Majeure
-        </span>
-      </div>
-      <div class="lg:col-span-6 p-8 sm:p-10 flex flex-col justify-between">
-        <div>
-          <div class="flex items-center gap-3 text-xs text-sable/60 mb-3">
-            <span class="text-terracotta-light font-bold uppercase tracking-wider">Droit Foncier & ANDF</span>
+  <!-- =========================================================================
+       ARTICLE À LA UNE (ENQUÊTE MAJEURE)
+       ========================================================================= -->
+  <section class="section-pb">
+    <div class="container">
+      <article class="featured-article-card" data-category="droit">
+        <div class="featured-media">
+          <img src="assets/img/creative/guide-andf-couverture.webp" alt="Sécurisation foncière avec l'ANDF au Bénin" loading="lazy">
+          <span class="card-badge bg-terracotta">Enquête Juridique Majeure</span>
+        </div>
+        <div class="featured-content">
+          <div class="article-meta-row">
+            <span class="text-terracotta font-bold">Droit Foncier & ANDF</span>
             <span>•</span>
             <span>Lecture : 8 min</span>
             <span>•</span>
             <span>Mise à jour 2026</span>
           </div>
-          <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-white mb-4 leading-snug">
+          <h2 class="featured-title">
             Le Guide Ultime de la Sécurisation Foncière au Bénin : Du Cadastre ANDF à la Délivrance du Titre Foncier (TF)
           </h2>
-          <p class="text-sable/70 text-sm leading-relaxed mb-6">
-            La loi n° 2013-01 modifiée en 2017 portant Code Foncier et Domanial en République du Bénin a profondément redéfini les règles de la propriété. Découvrez la procédure exacte, les pièges des conventions coutumières sous seing privé et le protocole notarié pour blinder votre acquisition.
+          <p class="featured-excerpt">
+            La loi n° 2013-01 modifiée portant Code Foncier et Domanial en République du Bénin a profondément redéfini les règles de la propriété. Découvrez la procédure exacte, les pièges des conventions coutumières sous seing privé et le protocole notarié pour blinder votre acquisition.
           </p>
-        </div>
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between pt-6 border-t border-sable/10 gap-4">
-          <div class="flex items-center gap-3">
-            <div class="w-8 h-8 rounded-full bg-terracotta/20 text-terracotta-light flex items-center justify-center font-bold text-xs">
-              IA
+          <div class="featured-footer">
+            <div class="author-block">
+              <div class="author-avatar">IA</div>
+              <div>
+                <div class="author-name">Cellule Juridique IMIS AFRIKA</div>
+                <div class="author-role">Direction Foncier & Patrimoine</div>
+              </div>
             </div>
-            <div class="text-xs">
-              <div class="font-bold text-white">Cellule Juridique IMIS AFRIKA</div>
-              <div class="text-sable/50">Direction Foncier & Patrimoine</div>
-            </div>
+            <a href="https://wa.me/2290153932286?text=Bonjour,%20j'ai%20lu%20votre%20guide%20sur%20l'ANDF%20et%20je%20souhaite%20un%20audit%20juridique%20sur%20mon%20titre." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="link-arrow">
+              <span>Consulter nos juristes fonciers</span>
+              <span class="arrow">➔</span>
+            </a>
           </div>
-          <a href="https://wa.me/2290153932286?text=Bonjour,%20j'ai%20lu%20votre%20guide%20sur%20l'ANDF%20et%20je%20souhaite%20un%20audit%20juridique%20sur%20mon%20titre." 
-             target="_blank" 
-             class="inline-flex items-center gap-2 text-xs font-bold text-terracotta-light hover:text-white transition-colors">
-            <span>Consulter nos juristes fonciers</span>
-            <span>➔</span>
-          </a>
-        </div>
-      </div>
-    </article>
-  </section>
-
-  <!-- ========================================================================= -->
-  <!-- 6. GRILLE DES ARTICLES ET ANALYSES                                        -->
-  <!-- ========================================================================= -->
-  <section class="pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-    <div id="blog-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-      <!-- ARTICLE 1 : DIASPORA -->
-      <article class="blog-card bg-onyx-card border border-sable/10 rounded-xl overflow-hidden hover:border-sable/30 transition-all flex flex-col justify-between"
-               data-category="diaspora">
-        <div class="p-6 sm:p-7">
-          <div class="flex items-center justify-between text-xs mb-3">
-            <span class="text-emerald-400 font-bold uppercase tracking-wider bg-emerald-500/10 px-2 py-0.5 rounded text-[10px]">
-              Diaspora
-            </span>
-            <span class="text-sable/50">Lecture : 6 min</span>
-          </div>
-          <h3 class="font-display font-bold text-xl text-white mb-3 leading-snug">
-            Construire à Distance depuis l'Europe ou les USA sans Risquer l'Escroquerie Familiale
-          </h3>
-          <p class="text-sable/70 text-xs leading-relaxed mb-6">
-            Pourquoi confier ses économies à un proche se solde souvent par des surfacturations et des chantiers à l'arrêt. Le protocole contractuel en 4 étapes pour piloter son investissement avec un tiers de confiance agréé au Bénin.
-          </p>
-        </div>
-        <div class="p-6 pt-0 border-t border-sable/10 flex items-center justify-between">
-          <span class="text-[11px] text-sable/50">Par la Direction IMIS</span>
-          <a href="https://wa.me/2290153932286?text=Bonjour,%20je%20souhaite%20des%20d%C3%A9tails%20sur%20le%20mandat%20de%20suivi%20de%20chantier%20diaspora." 
-             target="_blank" 
-             class="text-xs font-bold text-sable hover:text-terracotta-light transition-colors">
-            Activer ce suivi ➔
-          </a>
         </div>
       </article>
-
-      <!-- ARTICLE 2 : TENDANCES MARCHÉ GRAND NOKOUÉ -->
-      <article class="blog-card bg-onyx-card border border-sable/10 rounded-xl overflow-hidden hover:border-sable/30 transition-all flex flex-col justify-between"
-               data-category="marche">
-        <div class="p-6 sm:p-7">
-          <div class="flex items-center justify-between text-xs mb-3">
-            <span class="text-terracotta-light font-bold uppercase tracking-wider bg-terracotta/10 px-2 py-0.5 rounded text-[10px]">
-              Urbanisme & ROI
-            </span>
-            <span class="text-sable/50">Lecture : 5 min</span>
-          </div>
-          <h3 class="font-display font-bold text-xl text-white mb-3 leading-snug">
-            Abomey-Calavi vs Route des Pêches : Où se situeront les Plus-Values Record en 2028 ?
-          </h3>
-          <p class="text-sable/70 text-xs leading-relaxed mb-6">
-            Analyse comparative des flux d'infrastructures gouvernementales. Pourquoi Calavi reste le roi du rendement locatif résidentiel tandis que le couloir balnéaire s'impose pour l'hôtellerie et les domaines de villégiature.
-          </p>
-        </div>
-        <div class="p-6 pt-0 border-t border-sable/10 flex items-center justify-between">
-          <span class="text-[11px] text-sable/50">Par l'Observatoire IMIS</span>
-          <a href="biens-terrains.html" class="text-xs font-bold text-sable hover:text-terracotta-light transition-colors">
-            Voir les parcelles ➔
-          </a>
-        </div>
-      </article>
-
-      <!-- ARTICLE 3 : PIÈGES SÉMANTIQUES DU DROIT FONCIER -->
-      <article class="blog-card bg-onyx-card border border-sable/10 rounded-xl overflow-hidden hover:border-sable/30 transition-all flex flex-col justify-between"
-               data-category="droit">
-        <div class="p-6 sm:p-7">
-          <div class="flex items-center justify-between text-xs mb-3">
-            <span class="text-terracotta-light font-bold uppercase tracking-wider bg-terracotta/10 px-2 py-0.5 rounded text-[10px]">
-              Lexique Légal
-            </span>
-            <span class="text-sable/50">Lecture : 7 min</span>
-          </div>
-          <h3 class="font-display font-bold text-xl text-white mb-3 leading-snug">
-            Convention de Vente vs Attestation de Recasement vs Titre Foncier : Ce que dit la Loi
-          </h3>
-          <p class="text-sable/70 text-xs leading-relaxed mb-6">
-            Ne confondez plus un simple document d'attribution coutumière avec un titre de propriété inattaquable. Décryptage des décisions récentes des tribunaux béninois en matière de contestation foncière.
-          </p>
-        </div>
-        <div class="p-6 pt-0 border-t border-sable/10 flex items-center justify-between">
-          <span class="text-[11px] text-sable/50">Par la Cellule Juridique</span>
-          <a href="https://wa.me/2290153932286?text=Bonjour,%20j'ai%20un%20document%20foncier%20%C3%A0%20faire%20authentifier%20par%20votre%20cellule." 
-             target="_blank" 
-             class="text-xs font-bold text-sable hover:text-terracotta-light transition-colors">
-            Faire auditer un acte ➔
-          </a>
-        </div>
-      </article>
-
-      <!-- ARTICLE 4 : STRATÉGIE & MARQUE D'ENTREPRISE -->
-      <article class="blog-card bg-onyx-card border border-sable/10 rounded-xl overflow-hidden hover:border-sable/30 transition-all flex flex-col justify-between"
-               data-category="strategie">
-        <div class="p-6 sm:p-7">
-          <div class="flex items-center justify-between text-xs mb-3">
-            <span class="text-sable font-bold uppercase tracking-wider bg-sable/10 px-2 py-0.5 rounded text-[10px]">
-              Communication B2B
-            </span>
-            <span class="text-sable/50">Lecture : 4 min</span>
-          </div>
-          <h3 class="font-display font-bold text-xl text-white mb-3 leading-snug">
-            Pourquoi la Marque et la Vidéo Sont le Premier Actif Financier d'un Promoteur Immobilier
-          </h3>
-          <p class="text-sable/70 text-xs leading-relaxed mb-6">
-            La réputation vend avant les fondations. Comment une identité de marque statutaire et des captations cinématographiques de chantier permettent de pré-vendre 70% d'un programme immobilier avant son achèvement.
-          </p>
-        </div>
-        <div class="p-6 pt-0 border-t border-sable/10 flex items-center justify-between">
-          <span class="text-[11px] text-sable/50">Par le Pôle Communication</span>
-          <a href="services.html#communication" class="text-xs font-bold text-sable hover:text-terracotta-light transition-colors">
-            Consulter nos offres ➔
-          </a>
-        </div>
-      </article>
-
     </div>
   </section>
 
-  <!-- ========================================================================= -->
-  <!-- 7. ENCART D'ASSISTANCE JURIDIQUE DIRECTE (CONVERSION WHATSAPP)            -->
-  <!-- ========================================================================= -->
-  <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-sable/10">
-    <div class="bg-onyx-card border border-terracotta/30 rounded-2xl p-8 sm:p-12 text-center max-w-4xl mx-auto">
-      <div class="w-12 h-12 rounded-full bg-terracotta/15 text-terracotta-light flex items-center justify-center mx-auto mb-4">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+  <!-- =========================================================================
+       GRILLE DES GUIDES ET ANALYSES
+       ========================================================================= -->
+  <section class="section-pb">
+    <div class="container">
+      <div class="articles-grid">
+
+        <!-- ARTICLE 1 -->
+        <article class="article-card" data-category="diaspora">
+          <div class="article-card-body">
+            <div class="article-card-meta">
+              <span class="micro-tag text-emerald">Diaspora</span>
+              <span class="read-time">Lecture : 6 min</span>
+            </div>
+            <h3 class="article-card-title">Construire à Distance depuis l'Europe ou les USA sans Risquer l'Escroquerie Familiale</h3>
+            <p class="article-card-excerpt">
+              Pourquoi confier ses économies à un proche se solde souvent par des surfacturations et des chantiers à l'arrêt. Le protocole contractuel en 4 étapes pour piloter son investissement avec un tiers de confiance agréé au Bénin.
+            </p>
+          </div>
+          <div class="article-card-footer">
+            <span class="author-note">Par la Direction IMIS</span>
+            <a href="https://wa.me/2290153932286?text=Bonjour,%20je%20souhaite%20des%20d%C3%A9tails%20sur%20le%20mandat%20de%20suivi%20de%20chantier%20diaspora." target="_blank" class="article-link">
+              Activer ce suivi ➔
+            </a>
+          </div>
+        </article>
+
+        <!-- ARTICLE 2 -->
+        <article class="article-card" data-category="marche">
+          <div class="article-card-body">
+            <div class="article-card-meta">
+              <span class="micro-tag text-terracotta">Urbanisme & ROI</span>
+              <span class="read-time">Lecture : 5 min</span>
+            </div>
+            <h3 class="article-card-title">Abomey-Calavi vs Route des Pêches : Où se situeront les Plus-Values Record en 2028 ?</h3>
+            <p class="article-card-excerpt">
+              Analyse comparative des flux d'infrastructures gouvernementales. Pourquoi Calavi reste le roi du rendement locatif résidentiel tandis que le littoral s'impose pour l'hôtellerie et les domaines de villégiature.
+            </p>
+          </div>
+          <div class="article-card-footer">
+            <span class="author-note">Par l'Observatoire IMIS</span>
+            <a href="biens-terrains.html" class="article-link">
+              Voir les parcelles ➔
+            </a>
+          </div>
+        </article>
+
+        <!-- ARTICLE 3 -->
+        <article class="article-card" data-category="droit">
+          <div class="article-card-body">
+            <div class="article-card-meta">
+              <span class="micro-tag text-terracotta">Lexique Légal</span>
+              <span class="read-time">Lecture : 7 min</span>
+            </div>
+            <h3 class="article-card-title">Convention de Vente vs Attestation de Recasement vs Titre Foncier : Ce que dit la Loi</h3>
+            <p class="article-card-excerpt">
+              Ne confondez plus un simple document coutumier avec un titre de propriété inattaquable. Décryptage des décisions récentes des tribunaux béninois en matière de contestation foncière.
+            </p>
+          </div>
+          <div class="article-card-footer">
+            <span class="author-note">Par la Cellule Juridique</span>
+            <a href="https://wa.me/2290153932286?text=Bonjour,%20j'ai%20un%20document%20foncier%20%C3%A0%20faire%20authentifier%20par%20votre%20cellule." target="_blank" class="article-link">
+              Faire auditer un acte ➔
+            </a>
+          </div>
+        </article>
+
+        <!-- ARTICLE 4 -->
+        <article class="article-card" data-category="strategie">
+          <div class="article-card-body">
+            <div class="article-card-meta">
+              <span class="micro-tag text-sable">Communication B2B</span>
+              <span class="read-time">Lecture : 4 min</span>
+            </div>
+            <h3 class="article-card-title">Pourquoi la Marque et la Vidéo Sont le Premier Actif Financier d'un Promoteur Immobilier</h3>
+            <p class="article-card-excerpt">
+              La réputation vend avant les fondations. Comment une identité de marque statutaire et des captations cinématographiques de chantier permettent de pré-vendre 70% d'un programme avant son achèvement.
+            </p>
+          </div>
+          <div class="article-card-footer">
+            <span class="author-note">Par le Pôle Communication</span>
+            <a href="services.html#communication" class="article-link">
+              Consulter nos offres ➔
+            </a>
+          </div>
+        </article>
+
       </div>
-      <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-white mb-3">
-        Un doute sur un vendeur, une convention ou un Titre Foncier ?
-      </h2>
-      <p class="text-sable/70 text-sm max-w-2xl mx-auto mb-8">
-        Ne versez aucun acompte sans audit préalable. Notre cellule juridique effectue la réquisition d'état civil, le contrôle cadastral ANDF et la vérification des droits réels pour votre compte au Bénin.
-      </p>
-      <a href="https://wa.me/2290153932286?text=Bonjour%20la%20Cellule%20Juridique%20IMIS%20AFRIKA,%20je%20souhaite%20faire%20v%C3%A9rifier%20un%20dossier%20foncier%20en%20urgence." 
-         target="_blank" 
-         class="inline-flex items-center gap-3 bg-terracotta hover:bg-terracotta-hover text-white px-8 py-4 rounded font-bold text-sm shadow-xl shadow-terracotta/20 transition-all active:scale-95">
-        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
-          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.539 1.77.818 2.791.819h.005c3.18 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.765-5.768-5.765zm0-2.172c4.418 0 8 3.582 8 8 0 4.417-3.582 8-8 8a7.96 7.96 0 0 1-4.048-1.096L2 20.245l1.373-5.836A7.95 7.95 0 0 1 4.03 12c0-4.418 3.582-8 8-8z"/>
-        </svg>
-        <span>Demander un Audit Juridique Préalable</span>
-      </a>
     </div>
   </section>
 
-  <!-- ========================================================================= -->
-  <!-- 8. FOOTER INSTITUTIONNEL                                                  -->
-  <!-- ========================================================================= -->
-  <footer class="bg-onyx-card border-t border-sable/10 pt-16 pb-12 text-sm text-sable/80">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
-      <div class="space-y-4">
-        <div class="flex items-center gap-2">
-          <span class="font-display font-extrabold text-xl text-white">IMIS</span>
-          <span class="text-xs tracking-[0.3em] text-sable font-bold uppercase">AFRIKA</span>
-        </div>
-        <p class="text-xs text-sable/70 leading-relaxed">
-          Société à Responsabilité Limitée régie par le droit OHADA.<br>
-          Gérance assurée par <strong class="text-white">Koffi Olivier HOUNKPE</strong>.
+  <!-- =========================================================================
+       ASSISTANCE JURIDIQUE DIRECTE (CONVERSION WHATSAPP)
+       ========================================================================= -->
+  <section class="section-py bg-card-section border-t">
+    <div class="container">
+      <div class="alert-cta-box">
+        <div class="alert-icon">⚠️</div>
+        <h2 class="alert-title">Un doute sur un vendeur, une convention ou un Titre Foncier ?</h2>
+        <p class="alert-desc">
+          Ne versez aucun acompte sans audit préalable. Notre cellule juridique effectue la réquisition d'état civil, le contrôle cadastral ANDF et la vérification des droits réels pour votre compte au Bénin.
         </p>
-        <div class="text-[11px] text-sable/60 pt-2 border-t border-sable/10">
-          RCCM Cotonou : <strong>N° RB/ABC/26 B 12115</strong><br>
-          Siège : Ilot 11, Quartier Zopah, Abomey-Calavi
-        </div>
-      </div>
-      <div>
-        <h4 class="font-bold text-white text-xs uppercase tracking-wider mb-4">Navigation</h4>
-        <ul class="space-y-2 text-xs">
-          <li><a href="index.html" class="hover:text-white transition-colors">Accueil</a></li>
-          <li><a href="biens-terrains.html" class="hover:text-white transition-colors">Nos Biens & Terrains</a></li>
-          <li><a href="services.html" class="hover:text-white transition-colors">Services & Expertises</a></li>
-          <li><a href="conseils.html" class="hover:text-white transition-colors">Conseils & Analyses</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-bold text-white text-xs uppercase tracking-wider mb-4">Législation & Guides</h4>
-        <ul class="space-y-2 text-xs">
-          <li><span class="text-emerald-400">✓</span> Code Foncier et Domanial Béninois</li>
-          <li><span class="text-emerald-400">✓</span> Démarches ANDF expliquées</li>
-          <li><span class="text-emerald-400">✓</span> Protocole Diaspora sans litige</li>
-          <li><span class="text-emerald-400">✓</span> Veille urbanisme Grand Nokoué</li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-bold text-white text-xs uppercase tracking-wider mb-4">Desk Juridique & Foncier</h4>
-        <address class="not-italic text-xs text-sable/70 space-y-2">
-          <p>Ligne 1 : <a href="tel:+2290153932286" class="text-white hover:text-terracotta-light">+229 01 53 93 22 86</a></p>
-          <p>Ligne 2 : <a href="tel:+2290196177515" class="text-white hover:text-terracotta-light">+229 01 96 17 75 15</a></p>
-          <p>Email : <span class="text-white">contact@imisafrika.bj</span></p>
-        </address>
+        <a href="https://wa.me/2290153932286?text=Bonjour%20la%20Cellule%20Juridique%20IMIS%20AFRIKA,%20je%20souhaite%20faire%20v%C3%A9rifier%20un%20dossier%20foncier%20en%20urgence." 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn-primary">
+          <span>Demander un Audit Juridique Préalable</span>
+          <span>➔</span>
+        </a>
       </div>
     </div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-sable/10 flex flex-col sm:flex-row justify-between items-center text-xs text-sable/50 gap-4">
-      <p>© 2026 IMIS AFRIKA S.A.R.L. Tous droits réservés.</p>
-      <div class="flex gap-6">
-        <a href="contact.html" class="hover:text-white">Mentions Légales</a>
-        <a href="contact.html" class="hover:text-white">Politique de Confidentialité</a>
+  </section>
+
+  <!-- =========================================================================
+       LE NOUVEAU FOOTER SIGNATURE ÉPURÉ (STYLE SIMPLIX WATERMARK CENTRÉ)
+       ========================================================================= -->
+  <footer class="signature-footer">
+    
+    <div class="footer-watermark" aria-hidden="true">IMIS AFRIKA</div>
+
+    <div class="container footer-content-wrap">
+      
+      <div class="footer-brand-badge">
+        <svg viewBox="0 0 100 100" class="badge-icon-svg" fill="none">
+          <polygon points="50,10 88,32 88,68 50,90 12,68 12,32" stroke="#FFFFFF" stroke-width="8" fill="rgba(255, 255, 255, 0.15)"/>
+          <text x="50" y="62" font-family="'Syne', sans-serif" font-weight="800" font-size="34" fill="#FFFFFF" text-anchor="middle">IA</text>
+        </svg>
       </div>
+
+      <h3 class="footer-company-name">IMIS AFRIKA S.A.R.L.</h3>
+
+      <p class="footer-tagline">
+        <span>Foncier Sécurisé</span>
+        <span class="dot">·</span>
+        <span>Stratégie de Marque</span>
+        <span class="dot">·</span>
+        <span>Impact</span>
+      </p>
+
+      <p class="footer-location">
+        Ilot 11, Quartier Zopah, Abomey-Calavi, République du Bénin
+      </p>
+
+      <div class="footer-legal-links">
+        <span>RCCM Cotonou : RB/ABC/26 B 12115</span>
+        <span class="sep">|</span>
+        <a href="contact.html#mentions-legales">Mentions légales et confidentialité</a>
+      </div>
+
+      <p class="footer-copyright">
+        © 2026 IMIS AFRIKA S.A.R.L. Tous droits réservés.
+      </p>
+
     </div>
   </footer>
 
-  <!-- SCRIPT DE FILTRAGE INSTANTANÉ DES ARTICLES (ZÉRO LATENCE) -->
-  <script>
-    function filterBlog(category) {
-      document.querySelectorAll('.article-filter').forEach(btn => btn.classList.remove('active'));
-      event.target.classList.add('active');
+  <!-- =========================================================================
+       BARRE FLOTTANTE D'ACTION BASSE (STYLE PILL BAR)
+       ========================================================================= -->
+  <div class="floating-pill-wrap">
+    <div class="floating-pill-content">
+      <div class="pill-text">
+        <span class="pill-title">Checklist Foncière 2026</span>
+        <span class="pill-sub">Document pratique officiel • Format PDF</span>
+      </div>
+      <a href="https://wa.me/2290153932286?text=Bonjour,%20je%20souhaite%20la%20Checklist%20Fonci%C3%A8re%202026." 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         class="pill-btn">
+        Télécharger sur WhatsApp
+      </a>
+    </div>
+  </div>
 
-      const cards = document.querySelectorAll('.blog-card');
-      let count = 0;
-
-      cards.forEach(card => {
-        if (category === 'all' || card.dataset.category === category) {
-          card.style.display = card.classList.contains('lg:grid-cols-12') ? 'grid' : 'flex';
-          count++;
-        } else {
-          card.style.display = 'none';
-        }
-      });
-
-      document.getElementById('blog-count').innerText = count;
-    }
-  </script>
-
+  <!-- SCRIPT MOTEUR JAVASCRIPT MODULAIRE -->
+  <script src="js/main.js" defer></script>
 </body>
 </html>
