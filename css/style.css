@@ -535,3 +535,14 @@ img, video { max-width: 100%; height: auto; display: block; }
   .top-bar { display: none; }
   .floating-pill { display: none; }
 }
+/* TRAME HEXAGONALE OFFICIELLE (CHAPITRE 05 - CHARTE v1.1) */
+.hex-trame {
+  position: absolute;
+  right: -120px;
+  top: -60px;
+  width: 560px;
+  height: 560px;
+  opacity: 0.12; /* Respecte la fourchette stricte de 8 à 16 % */
+  pointer-events: none;
+  z-index: 1;
+}
