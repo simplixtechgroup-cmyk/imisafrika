@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://simplixtechgroup-cmyk.github.io/imisafrika/sitemap.xml
