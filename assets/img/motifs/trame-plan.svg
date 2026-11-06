@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="100" height="100"><defs><path id="t-h" d="M0 -17 L14.72 -8.5 L14.72 8.5 L0 17 L-14.72 8.5 L-14.72 -8.5Z"/><path id="t-r" d="M0 -20 L17.32 -10 L17.32 10 L0 20 L-17.32 10 L-17.32 -10Z" fill="none" stroke-width="4" stroke-linejoin="round"/><path id="t-u" d="M0 -1 L.866 -.5 L.866 .5 L0 1 L-.866 .5 L-.866 -.5Z" fill="none" vector-effect="non-scaling-stroke"/><g id="t-cu">
+      <path d="M0 -20 L17.32 -10 L0 0 L-17.32 -10Z" fill="#E5D7D0"/>
+      <path d="M-17.32 -10 L0 0 L0 20 L-17.32 10Z" fill="#9E472A"/>
+      <path d="M17.32 -10 L0 0 L0 20 L17.32 10Z" fill="#6F2A16"/>
+    </g></defs>
+      <path d="M10 0V50M20 0V50M30 0V50M40 0V50M0 10H50M0 20H50M0 30H50M0 40H50" stroke="#D98A62" stroke-opacity=".2" stroke-width=".6"/>
+      <path d="M0 0V50M0 0H50" stroke="#D98A62" stroke-opacity=".55" stroke-width=".9"/>
+      <use href="#t-u" transform="scale(6)" stroke="#D98A62" stroke-width="1.2"/>
+      <use href="#t-u" transform="translate(50 0) scale(6)" stroke="#D98A62" stroke-width="1.2"/>
+      <use href="#t-u" transform="translate(0 50) scale(6)" stroke="#D98A62" stroke-width="1.2"/>
+      <use href="#t-u" transform="translate(50 50) scale(6)" stroke="#D98A62" stroke-width="1.2"/>
+    </svg>

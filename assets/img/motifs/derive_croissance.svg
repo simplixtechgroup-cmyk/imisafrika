@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 200" role="img" aria-label="Anneau avec barres de croissance et flèche ascendante"><defs>
+    <path id="d-hx" fill-rule="evenodd" d="M92.70 4.90 L176.90 51.90 L176.90 146.10 L91.80 192.60 L6.47 144.90 L6.47 51.40Z M91.40 44.00 L141.00 71.90 L141.00 126.00 L90.00 154.80 L41.20 127.75 L41.20 71.90Z"/>
+  </defs>
+        <use href="#d-hx" transform="translate(46 0)" fill="#E5D7D0"/>
+        <use href="#d-hx" fill="#9E472A"/>
+        <rect x="60" y="104" width="14" height="18" rx="2" fill="#D98A62"/>
+        <rect x="80" y="88" width="14" height="34" rx="2" fill="#6F2A16"/>
+        <rect x="100" y="70" width="14" height="52" rx="2" fill="#9E472A"/>
+        <path d="M150 156 L190 116 L210 130 L248 64" stroke="#6F2A16" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path d="M262 40 L230 52 L254 74Z" fill="#6F2A16"/>
+      </svg>
