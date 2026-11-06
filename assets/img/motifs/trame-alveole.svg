@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.64 60" width="69.28" height="120"><defs><path id="t-h" d="M0 -17 L14.72 -8.5 L14.72 8.5 L0 17 L-14.72 8.5 L-14.72 -8.5Z"/><path id="t-r" d="M0 -20 L17.32 -10 L17.32 10 L0 20 L-17.32 10 L-17.32 -10Z" fill="none" stroke-width="4" stroke-linejoin="round"/><path id="t-u" d="M0 -1 L.866 -.5 L.866 .5 L0 1 L-.866 .5 L-.866 -.5Z" fill="none" vector-effect="non-scaling-stroke"/><g id="t-cu">
+      <path d="M0 -20 L17.32 -10 L0 0 L-17.32 -10Z" fill="#E5D7D0"/>
+      <path d="M-17.32 -10 L0 0 L0 20 L-17.32 10Z" fill="#9E472A"/>
+      <path d="M17.32 -10 L0 0 L0 20 L17.32 10Z" fill="#6F2A16"/>
+    </g></defs>
+      <use href="#t-h" x="17.32" y="20" fill="#F3ECE7"/>
+      <use href="#t-h" x="0" y="50" fill="#E5D7D0"/><use href="#t-h" x="34.64" y="50" fill="#E5D7D0"/>
+      <use href="#t-h" x="0" y="-10" fill="#E5D7D0"/><use href="#t-h" x="34.64" y="-10" fill="#E5D7D0"/>
+    </svg>

@@ -1,0 +1,17 @@
+{
+  "name": "IMIS AFRIKA S.A.R.L.",
+  "short_name": "IMIS AFRIKA",
+  "description": "Sécurisation foncière, immobilier et stratégie de marque au Bénin.",
+  "lang": "fr",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "browser",
+  "background_color": "#F3ECE7",
+  "theme_color": "#9E472A",
+  "icons": [
+    { "src": "assets/img/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/img/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/img/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
